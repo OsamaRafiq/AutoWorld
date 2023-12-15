@@ -1,0 +1,1598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Models</title>
+<link rel="icon" href="Auto.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+     <link rel="stylesheet" href="AutoWorld.css">
+     
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ <!--------- FONT AWESOME  ------->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+ <!-- Font Awesome Kit JS -->
+ <script src="https://kit.fontawesome.com/2c7fc28a2f.js"></script>
+
+<!-- Animation  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+   <!-- ANIMATION css -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   <!-- animation js -->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<style>
+/* body {
+	font-family: "Open Sans", sans-serif;
+} */
+h2 {
+	color: #000;
+	font-size: 46px;
+	font-weight: 300;
+	text-align: center;
+	text-transform: uppercase;
+	position: relative;
+	margin: 30px 0 80px;
+	font-family: 'Franklin Gothic heavy';
+}
+h2 b {
+	color: #ffc000;
+}
+h2::after {
+	content: "";
+	width: 100px;
+	position: absolute;
+	margin: 0 auto;
+	height: 4px;
+	background: rgba(0, 0, 0, 0.2);
+	left: 0;
+	right: 0;
+	bottom: -20px;
+}
+.carousel {
+	margin: 50px auto;
+	padding: 0 70px;
+}
+.carousel .carousel-item {
+	min-height: 330px;
+	text-align: center;
+	overflow: hidden;
+}
+.carousel .carousel-item .img-box {
+	height: 160px;
+	width: 100%;
+	position: relative;
+}
+.carousel .carousel-item img {	
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+.carousel .carousel-item h4 {
+	font-size: 18px;
+	margin: 10px 0;
+}
+.carousel .carousel-item .btn {
+	color: #333;
+	border-radius: 0;
+	font-size: 11px;
+	text-transform: uppercase;
+	font-weight: bold;
+	background: none;
+	border: 1px solid #ccc;
+	padding: 5px 10px;
+	margin-top: 5px;
+	line-height: 16px;
+}
+.carousel .carousel-item .btn:hover, .carousel .carousel-item .btn:focus {
+	color: #fff;
+	background: #000;
+	border-color: #000;
+	box-shadow: none;
+}
+.carousel .carousel-item .btn i {
+	font-size: 14px;
+	font-weight: bold;
+	margin-left: 5px;
+}
+.carousel .thumb-wrapper {
+	text-align: center;
+}
+.carousel .thumb-content {
+	padding: 15px;
+}
+.carousel-control-prev, .carousel-control-next {
+	height: 100px;
+	width: 40px;
+	background: none;
+	margin: auto 0;
+	background: rgba(0, 0, 0, 0.2);
+}
+.carousel-control-prev i, .carousel-control-next i {
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	display: inline-block;
+	margin: -16px 0 0 0;
+	z-index: 5;
+	left: 0;
+	right: 0;
+	color: rgba(0, 0, 0, 0.8);
+	text-shadow: none;
+	font-weight: bold;
+}
+.carousel-control-prev i {
+	margin-left: -3px;
+}
+.carousel-control-next i {
+	margin-right: -3px;
+}
+.carousel .item-price {
+	font-size: 13px;
+	padding: 2px 0;
+}
+.carousel .item-price strike {
+	color: #999;
+	margin-right: 5px;
+}
+.carousel .item-price span {
+	color: #86bd57;
+	font-size: 110%;
+}	
+.carousel .carousel-indicators {
+	bottom: -50px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 4px;
+	border-radius: 50%;
+	border-color: transparent;
+	border: none;
+}
+.carousel-indicators li {	
+	background: rgba(0, 0, 0, 0.2);
+}
+.carousel-indicators li.active {	
+	background: rgba(0, 0, 0, 0.6);
+}
+.star-rating li {
+	padding: 0;
+}
+.star-rating i {
+	font-size: 14px;
+	color: #ffc000;
+}
+
+
+
+
+.cta {
+  background: url("389264.jpg") fixed center center;
+  background-size: cover;
+  padding: 120px 0;
+}
+
+.cta h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.cta p {
+  color: #fff;
+}
+
+.cta .cta-btn {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.cta .cta-btn:hover {
+  background: #47b2e4;
+  border: 2px solid #47b2e4;
+}
+
+@media (max-width: 1024px) {
+  .cta {
+    background-attachment: scroll;
+  }
+}
+
+@media (min-width: 769px) {
+  .cta .cta-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+/* NavBar  */
+
+
+#logo1{
+  border-radius: 100%;
+  /* box-shadow: 7px 7px 7px grey,-7px -7px 7px grey; */
+  margin-left: 30px;
+
+}
+.main-nav .navbar {
+  background:transparent;
+}
+header .nav-link {
+  color: white;
+  font-weight: bold;
+  width: fit-content;
+
+  
+}
+
+/* mega menu */
+
+.mega-menu {
+  left: 0;
+  right: 0;
+  padding: 15px;
+  display:none;
+  padding-top: 0;
+  min-height: 100%;
+
+}
+h4.row.mega-title {
+  color: #eee;
+  margin-top: 0px;
+  font-size: 1.5vw;
+  padding-left: 15px;
+  padding-bottom: 13px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #547787;
+  padding-top: 15px;
+  background-color: #365670
+  }
+ .mega-menu ul li a {
+  line-height: 25px;
+  font-size: 90%;
+  display: block;
+  
+}
+ul.stander li a {
+    padding: 3px 0px;
+}
+
+ul.description li {
+    padding-bottom: 12px;
+    line-height: 8px;
+}
+
+ul.description li span {
+    color: #ccc;
+    font-size: 85%;
+}
+a.view-more{
+  border-radius: 1px;
+  margin-top:15px;
+  background-color: #009FE1;
+  padding: 2px 10px !important;
+  line-height: 21px !important;
+  display: inline-block !important;
+}
+a.view-more:hover{
+	color:#fff;
+	background:#0DADEF;
+}
+ul.icon-des li a i {
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #009FE1;
+    line-height: 35px !important;
+}
+
+ul.icon-des li {
+    width: 100%;
+    display: table;
+    margin-bottom: 11px;
+}
+
+
+
+
+
+
+
+
+.clearfix:after,
+.clearfix:before {
+  content: '';
+  display: table
+}
+
+.clearfix:after {
+  clear: both;
+  display: block
+}
+ul{
+	list-style:none;
+	margin: 0;
+	padding: 0;
+}
+.stander a,.stander a:hover,.stander a.active,.stander a:active,.stander a:visited,.stander a:focus{
+	color:black;
+	text-decoration:none;
+}
+.content{
+	margin: 50px 100px 0px 100px;
+}
+
+.exo-menu{
+	width: 100%;
+	float: left;
+	list-style: none;
+	position:relative;
+	background: #23364B;
+}
+
+.exo-menu > li > a{
+	color: #ccc;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-right: 1px #365670 dotted;
+	-webkit-transition: color 0.2s linear, background 0.2s linear;
+	-moz-transition: color 0.2s linear, background 0.2s linear;
+	-o-transition: color 0.2s linear, background 0.2s linear;
+	transition: color 0.2s linear, background 0.2s linear;
+}
+.exo-menu > li > a.active,
+.exo-menu > li > a:hover,
+li.drop-down ul > li > a:hover{
+	background:#009FE1;
+	color:#fff;
+}
+.exo-menu i {
+  float: left;
+  font-size: 18px;
+  margin-right: 6px;
+  line-height: 20px !important;
+}
+li.drop-down,
+.flyout-right,
+.flyout-left{position:relative;}
+li.drop-down:before {
+  content: "\f103";
+  color: #fff;
+  font-family: FontAwesome;
+  font-style: normal;
+  display: inline;
+  position: absolute;
+  right: 6px;
+  top: 20px;
+  font-size: 14px;
+}
+li.drop-down>ul{
+	left: 0px;
+	min-width: 230px;
+
+}
+.drop-down-ul{display:none;}
+.flyout-right>ul,
+.flyout-left>ul{
+  top: 0;
+  min-width: 230px;
+  display: none;
+  border-left: 1px solid #365670;
+  }
+
+li.drop-down>ul>li>a,
+.flyout-right ul>li>a ,
+.flyout-left ul>li>a {
+	color: #fff;
+	display: block;
+	padding: 20px 22px;
+	text-decoration: none;
+	background-color: #365670;
+	border-bottom: 1px dotted #547787;
+	-webkit-transition: color 0.2s linear, background 0.2s linear;
+	-moz-transition: color 0.2s linear, background 0.2s linear;
+	-o-transition: color 0.2s linear, background 0.2s linear;
+	transition: color 0.2s linear, background 0.2s linear;
+}
+.flyout-right ul>li>a ,
+.flyout-left ul>li>a {
+	border-bottom: 1px dotted #B8C7BC;
+}
+/*hover*/
+.Blog:hover,
+.Images:hover,
+.mega-menu:hover,
+.drop-down-ul:hover,
+li.flyout-left>ul:hover,
+li.flyout-right>ul:hover,
+.flyout-mega-wrap:hover,
+li.flyout-left a:hover +ul,
+li.flyout-right a:hover +ul,
+.blog-drop-down >a:hover+.Blog,
+li.drop-down>a:hover +.drop-down-ul,
+.images-drop-down>a:hover +.Images,
+.mega-drop-down a:hover+.mega-menu,
+li.flyout-mega>a:hover +.flyout-mega-wrap{
+	display:block;
+}
+/*responsive*/
+ @media (min-width:767px){
+	.exo-menu > li > a{
+	display:block;
+	padding: 20px 22px;
+ }
+.mega-menu, .flyout-mega-wrap, .Images, .Blog,.flyout-right>ul,
+.flyout-left>ul, li.drop-down>ul{
+		position:absolute;
+}
+ .flyout-right>ul{
+	left: 100%;
+	}
+	.flyout-left>ul{
+	right: 100%;
+}
+ }
+@media (max-width:767px){
+
+	.exo-menu {
+		min-height: 58px;
+		background-color: #23364B;
+		width: 100%;
+	}
+	
+	.exo-menu > li > a{
+		width:100% ;
+	    display:none ;
+	
+	}
+	.exo-menu > li{
+		width:100%;
+	}
+	.display.exo-menu > li > a{
+	  display:block ;
+	  	padding: 20px 22px;
+	}
+	
+.mega-menu, .Images, .Blog,.flyout-right>ul,
+.flyout-left>ul, li.drop-down>ul{
+		position:relative;
+}
+
+}
+a.toggle-menu{
+    position: absolute;
+    right: 0px;
+    padding: 20px;
+    font-size: 27px;
+    background-color: #ccc;
+    color: #23364B;
+    top: 0px;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box
+}
+
+.clearfix:after,
+.clearfix:before {
+  content: '';
+  display: table
+}
+
+.clearfix:after {
+  clear: both;
+  display: block
+}
+ul{
+	list-style:none;
+	margin: 0;
+	padding: 0;
+}
+a, a:hover, a.active, a:active, a:visited, a:focus{
+	color:#fefefe;
+	text-decoration:none;
+}
+.content{
+	margin: 50px 100px 0px 100px;
+}
+
+.exo-menu{
+	width: 100%;
+	float: left;
+	list-style: none;
+	position:relative;
+	background: #23364B;
+}
+.exo-menu > li
+.exo-menu > li > a{
+	color: #ccc;
+	text-decoration: none;
+	text-transform: uppercase;
+	border-right: 1px #365670 dotted;
+	-webkit-transition: color 0.2s linear, background 0.2s linear;
+	-moz-transition: color 0.2s linear, background 0.2s linear;
+	-o-transition: color 0.2s linear, background 0.2s linear;
+	transition: color 0.2s linear, background 0.2s linear;
+}
+.exo-menu > li > a.active,
+.exo-menu > li > a:hover,
+li.drop-down ul > li > a:hover{
+	background:#009FE1;
+	color:#fff;
+}
+.exo-menu i {
+  float: left;
+  font-size: 18px;
+  margin-right: 6px;
+  line-height: 20px !important;
+}
+li.drop-down,
+.flyout-right,
+.flyout-left{position:relative;}
+li.drop-down:before {
+  content: "\f103";
+  color: #fff;
+  font-family: FontAwesome;
+  font-style: normal;
+  display: inline;
+  position: absolute;
+  right: 6px;
+  top: 20px;
+  font-size: 14px;
+}
+li.drop-down>ul{
+	left: 0px;
+	min-width: 230px;
+
+}
+.drop-down-ul{display:none;}
+.flyout-right>ul,
+.flyout-left>ul{
+  top: 0;
+  min-width: 230px;
+  display: none;
+  border-left: 1px solid #365670;
+  }
+
+li.drop-down>ul>li>a,
+.flyout-right ul>li>a ,
+.flyout-left ul>li>a {
+	color: #fff;
+	display: block;
+	padding: 20px 22px;
+	text-decoration: none;
+	background-color: #365670;
+	border-bottom: 1px dotted #547787;
+	-webkit-transition: color 0.2s linear, background 0.2s linear;
+	-moz-transition: color 0.2s linear, background 0.2s linear;
+	-o-transition: color 0.2s linear, background 0.2s linear;
+	transition: color 0.2s linear, background 0.2s linear;
+}
+.flyout-right ul>li>a ,
+.flyout-left ul>li>a {
+	border-bottom: 1px dotted #B8C7BC;
+}
+
+
+/*Flyout Mega*/
+.flyout-mega-wrap {
+	top: 0;
+	right: 0;
+	left: 100%;
+	width: 100%;
+	display:none;
+	height: 100%;
+	padding: 15px;
+	min-width: 742px;
+
+}
+h4.row.mega-title {
+  color:#eee;
+  margin-top: 0px;
+  font-size: 14px;
+  padding-left: 15px;
+  padding-bottom: 13px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #ccc;
+ }
+.flyout-mega ul > li > a {
+  font-size: 90%;
+  line-height: 25px;
+  color: #fff;
+  font-family: inherit;
+}
+.flyout-mega ul > li > a:hover,
+.flyout-mega ul > li > a:active,
+.flyout-mega ul > li > a:focus{
+  text-decoration: none;
+  background-color: transparent !important;
+  color: #ccc !important
+}
+
+.mega-menu {
+  left: 0;
+  right: 0;
+  padding: 15px;
+  display:none;
+  padding-top: 0;
+  min-height: 100%;
+
+}
+h4.row.mega-title {
+  color: #eee;
+  margin-top: 0px;
+  font-size: 14px;
+  padding-left: 15px;
+  padding-bottom: 13px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #547787;
+  padding-top: 15px;
+  background-color: #365670
+  }
+ .mega-menu ul li a {
+  line-height: 25px;
+  font-size: 90%;
+  display: block;
+}
+ul.stander li a {
+    padding: 3px 0px;
+}
+
+ul.description li {
+    padding-bottom: 12px;
+    line-height: 8px;
+}
+
+ul.description li span {
+    color: #ccc;
+    font-size: 85%;
+}
+a.view-more{
+  border-radius: 1px;
+  margin-top:15px;
+  background-color: #009FE1;
+  padding: 2px 10px !important;
+  line-height: 21px !important;
+  display: inline-block !important;
+}
+a.view-more:hover{
+	color:#fff;
+	background:#0DADEF;
+}
+ul.icon-des li a i {
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #009FE1;
+    line-height: 35px !important;
+}
+
+ul.icon-des li {
+    width: 100%;
+    display: table;
+    margin-bottom: 11px;
+}
+/*Blog DropDown*/
+.Blog{
+	left:0;
+	display:none;
+	color:#fefefe;
+	padding-top:15px;
+	background:#547787;
+	padding-bottom:15px;
+}
+.Blog .blog-title{
+	color:#fff;
+	font-size:15px;
+	text-transform:uppercase;
+
+}
+.Blog .blog-des{
+	color:#ccc;
+	font-size:90%;
+	margin-top:15px;
+}
+.Blog a.view-more{
+	margin-top:0px;
+}
+/*Images*/
+.Images{
+	left:0;
+   width:100%;
+	 display:none;
+	color:#fefefe;
+	padding-top:15px;
+	background:#547787;
+	padding-bottom:15px;
+}
+.Images h4 {
+  font-size: 15px;
+  margin-top: 0px;
+  text-transform: uppercase;
+}
+/*common*/
+.flyout-right ul>li>a ,
+.flyout-left ul>li>a,
+.flyout-mega-wrap,
+.mega-menu{
+	background-color: #547787;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hvr-sweep-to-right {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-sweep-to-right:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #0b1418;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-sweep-to-right:hover, .hvr-sweep-to-right:focus, .hvr-sweep-to-right:active {
+  color: white!important;
+}
+.hvr-sweep-to-right:hover:before, .hvr-sweep-to-right:focus:before, .hvr-sweep-to-right:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Underline From Left */
+.hvr-underline-from-left {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: black;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+  right: 0;
+}
+
+
+
+
+/* Footer  */
+
+
+#footer {
+  color: #fff;
+  font-size: 14px;
+  background: #111;
+}
+
+#footer .footer-top {
+  padding: 60px 0 30px 0;
+  background: #1e1e1e;
+}
+
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-contact h3 {
+  font-size: 22px;
+  margin: 0 0 10px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+#footer .footer-top .footer-contact p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Roboto", sans-serif;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #1ed33c;
+  font-size: 18px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: rgba(255, 255, 255, 0.6);
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+#footer .footer-newsletter {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+#footer .footer-newsletter h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 4px 0 0 4px;
+  text-align: left;
+}
+
+#footer .footer-newsletter form input[type=email] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 100px);
+}
+
+#footer .footer-newsletter form input[type=button] {
+  position: absolute;
+  top: 0;
+  right: -4px;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #1bbd36;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#footer .footer-newsletter form input[type=button]:hover {
+  background: #2ae149;
+}
+
+#footer .credits {
+  padding-top: 5px;
+  font-size: 13px;
+  color: #fff;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 4px;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #1bbd36;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+
+  <!-- NAVBAR -->
+                         
+                                   <header class="main-nav fixed-top">
+   
+                                    <nav class="navbar navbar-expand-lg">
+                                      <div class="container-fluid">
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                                          <i class="fas fa-stream navbar-toggler-icon"></i>
+                                        </button>
+                                        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                                          <a class="navbar-brand" href="../AutoWorld/AutoWorld.html"><img src="Auto.png" alt="AutoWorldLogo" height="90px" width="100px" id="logo1" data-aos="flip-right" data-aos-duration="3000" data-aos-once="true"></a>
+                                          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                            <li class="nav-item">
+                                              <a class="nav-link hvr-underline-from-left" href="../AutoWorld/AutoWorld.html">HOME  <i class="fas fa-home"></i></a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a class="nav-link hvr-underline-from-left" href="../About Us/About us.html">ABOUT US  <i class="fas fa-users"></i></a>
+                                            </li>  
+                                             
+                                                 <li class="mega-drop-down"><a class="nav-link hvr-underline-from-left" href="../Search/tr.html">BRANDS  <i class="fas fa-car"></i> </a>
+                                                     <div class="animated fadeIn mega-menu" style="background-color: white">
+                                                         <div class="mega-menu-wrap">
+                                                             <div class="row">
+                                                             <div class="col-md-3" >
+                                                                 <h4 class="row mega-title " style="background-color: black">BMW</h4>
+                                                                 <ul class="stander">
+                                                                     <li><a class="nav-link hvr-underline-from-left" href="../Cars/i4/details.html">THE I4</a></li>
+                                                                     <li><a class="nav-link hvr-underline-from-left" href="../Cars/XM/details.html">THE X6 M</a></li>
+                                                                     <li><a class="nav-link hvr-underline-from-left" href="../Cars/THE M3/details.html">THE M3</a></li>
+                                                                     <li><a class="nav-link hvr-underline-from-left" href="../Cars/THE M4/details.html">THE M4</a></li>
+                                                                     <br>
+                                                                     <button onclick="document.location='../BMW/BMW.html'" type="button" class="btn btn-outline-dark">EXPLORE</button>
+                                                                 </ul>
+                                                                 </div>
+                                                                 <div class="col-md-3">
+                                                                         <h4 class="row mega-title" style="background-color: black">TOYOTA</h4>
+                                                                     <ul class="stander">
+                                                                         <li><a class="nav-link hvr-underline-from-left" href="../Cars/Prius Prime/details.html">PRIUS PRIME</a></li>
+                                                                         <li><a class="nav-link hvr-underline-from-left" href="../cars/Camry/details.html">CAMRY</a></li>
+                                                                         <li><a class="nav-link hvr-underline-from-left" href="../Cars/GR86/details.html">GR86</a></li>
+                                                                         <li><a class="nav-link hvr-underline-from-left" href="../Cars/supra/details.html">GR SUPRA</a></li>
+                                                                         <br>
+                                                                         <button onclick="document.location='../TOYOTA/TOYOTA.html'" type="button" class="btn btn-outline-dark">EXPLORE</button>
+                                                                     </ul>
+                                                                 </div>
+                                                                 <div class="col-md-3">
+                                                                     <h4 class="row mega-title" style="background-color: black">LAMBORGHINI</h4>
+                                                                     <ul class="stander">
+                                                                         <li><a class="nav-link hvr-underline-from-left" href="../Cars/Lambo Aventador/details.html">AVENTADOR</a></li>
+                                                                         <li><a class="nav-link hvr-underline-from-left" href="../Cars/Lambo SVJ/details.html">AVENTADOR SVJ</a></li>
+                                                                         <li><a class="nav-link hvr-underline-from-left" href="../Cars/Sian/details.html">SIAN ROADSTER</a></li>
+                                                                         <li><a class="nav-link hvr-underline-from-left" href="../Cars/Contach/details.html">COUNTACH</a></li>
+                                                                         <br>
+                                                                         <button onclick="document.location='../Lambor/Lambor.html'"  type="button" class="btn btn-outline-dark">EXPLORE</button>
+                                                                     </ul>
+                                                                 </div>
+                                                                 <div class="col-md-3">
+                                                                     <h4 class="row mega-title" style="background-color: black">HONDA</h4>
+                                                                     <ul class="stander">
+                                                                         <li><a class="nav-link hvr-underline-from-left" href="../Cars/Honda Accord/details.html">HONDA ACCORD</a></li>
+                                                                         <li><a class="nav-link hvr-underline-from-left" href="../Cars/civic sedan/details.html">CIVIC SEDAN</a></li>
+                                                                         <li><a class="nav-link hvr-underline-from-left" href="../Cars/civic hatch/details.html">CIVIC HATCHBAC</a></li>
+                                                                         <li><a class="nav-link hvr-underline-from-left" href="../Cars/Honda crv/details.html">HONDA CR-V</a></li>
+                                                                         <br>
+                                                                         <button onclick="document.location='../Honda/Honda.html'" type="button" class="btn btn-outline-dark">EXPLORE</button>
+                                                                     </ul>
+                                                                 </div>
+                                                                 
+                                                             </div>
+                                                         </div>	
+                                                     </div>
+                                                 </li>
+                                 
+                                            <li class="nav-item">
+                                              <a class="nav-link hvr-underline-from-left" href="../Compare/Compare.html">CAMPARISION  <i class="fab fa-bandcamp"></i></a>
+                                            </li>                                     
+                                           
+                                            <li class="nav-item">
+                                              <a class="nav-link hvr-underline-from-left" href="../Finance/Finance.html">FINANCE  <i class="fas fa-hand-holding-usd"></i></a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a class="nav-link hvr-underline-from-left" href="../warranty/warranty.html">WARRANTY  <i class="fas fa-handshake"></i></a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a class="nav-link hvr-underline-from-left" href="../contact us/contact.html">CONTACT US  <i class="fas fa-address-book"></i></a>
+                                            </li>
+                                          
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </nav>
+                                  </header> 
+
+
+
+
+
+
+<div>
+
+<video autoplay loop muted width="100%" src="Lamborghini Sián Roadster - Technical Specifications, Pictures, Videos.mp4"></video>
+
+</div>
+
+
+
+
+
+
+
+
+   
+    
+        
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			<h2 data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">Trending <b>Models</b></h2>
+		
+			<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+			<!-- Carousel indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>   
+			<!-- Wrapper for carousel items -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="row">
+						<div class="col-sm-3" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="veno.png" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Lamborghini Veneno</h4>
+									<p class="item-price"><strike>$730,000</strike> <span>$630,000</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="../Cars/Lambo Veneno/details.html" class="btn btn-primary">Purchase</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="../Cars/Lambo urus/urs.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Lamborghini Urus</h4>
+									<p class="item-price"><strike>$230,000</strike> <span>$230,000</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="../Cars/Lambo urus/details.html" class="btn btn-primary">Purchase</a>
+								</div>						
+							</div>
+						</div>		
+						<div class="col-sm-3" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="../Cars/Lambo spyder/spyder.png" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Lamborghini Spyder</h4>
+									<p class="item-price"><strike>$295,000</strike> <span>$280,000</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+										</ul>
+									</div>
+									<a href="../Cars/Lambo spyder/details.html" class="btn btn-primary">PURCHASE</a>
+								</div>						
+							</div>
+						</div>								
+						<div class="col-sm-3" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="../Cars/Lambo gallardo/gallardo.png" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Lambo Gallardo</h4>
+									<p class="item-price"><strike>$256,620</strike> <span>$246,620</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="../cars/Lambo gallardo/details.html" class="btn btn-primary">PURCHASE</a>
+								</div>						
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-sm-3" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="../Cars/Lambo Huracan/huracan.png" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Lamborghini Huracan</h4>
+									<p class="item-price"><strike>$270,000</strike> <span>$270,000</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="../Cars/Lambo Huracan/details.html" class="btn btn-primary">PURCHASE</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="../Cars/Lambo Murcielago/mur.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Lamborghini Murcielago</h4>
+									<p class="item-price"><strike>$364,000</strike> <span>$354,000</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+										</ul>
+									</div>
+									<a href="#" class="btn btn-primary">PURCHASE</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="../Cars/Lambo evo/evo.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Lamborghini Evo</h4>
+									<p class="item-price"><strike>$260,000</strike> <span>$250,000</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="../Cars/Lambo evo/details.html" class="btn btn-primary">PURCHASE</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="../Cars/Lambo diablo/diablo.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Lamborghini Diablo</h4>
+									<p class="item-price"><strike>$210,000</strike> <span>$210,000</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="../Cars/Lambo diablo/details.html" class="btn btn-primary">PURCHASE</a>
+								</div>						
+							</div>
+						</div>						
+					</div>
+				</div>
+				<div class="carousel-item">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="../Cars/Lambo STO/huracan_sto_3d_m.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Lamborghini STO</h4>
+									<p class="item-price"><strike>$657,353</strike> <span>$657,353</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="../Cars/Lambo STO/details.html" class="btn btn-primary">PURCHASE</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="../Cars/Lambo SVJ/pic3.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Lamborghini SVJ</h4>
+									<p class="item-price"><strike>$628,353</strike> <span>$626,353</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="../Cars/Lambo SVJ/details.html" class="btn btn-primary">PURCHASE</a>
+								</div>						
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="../Cars/Lambo sent/sent.jpg" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Lamborghini Centenario</h4>
+									<p class="item-price"><strike>$2,235,000</strike> <span>$2,230,000</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="../Cars/Lambo sent/details.html" class="btn btn-primary">Purchase</a>
+								</div>						
+							</div>
+						</div>	
+						<div class="col-sm-3">
+							<div class="thumb-wrapper">
+								<div class="img-box">
+									<img src="../Cars/Sian/pic4.png" class="img-fluid" alt="">
+								</div>
+								<div class="thumb-content">
+									<h4>Lamborghini Sian</h4>
+									<p class="item-price"><strike>$583,353</strike> <span>$580,353</span></p>
+									<div class="star-rating">
+										<ul class="list-inline">
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star"></i></li>
+											<li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+									<a href="../Cars/Sian/details.html" class="btn btn-primary">Purchase</a>
+								</div>						
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Carousel controls -->
+			<a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+				<i class="fa fa-angle-left"></i>
+			</a>
+			<a class="carousel-control-next" href="#myCarousel" data-slide="next">
+				<i class="fa fa-angle-right"></i>
+			</a>
+		</div>
+		</div>
+	</div>
+</div>
+
+
+ <section class="cta" >
+        <br>       
+            
+            <h1 style="font-size: 3.5vw;" class="text-center text-light fw-bold" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">CANT FIND WHAT YOU'RE LOOKING FOR ? </h1>
+			<br>
+			<center><a href="../Search/tr.html" class="btn btn-danger btn-lg" data-aos="flip-right" data-aos-duration="2000" data-aos-once="true">SEARCH HERE</a></center>
+
+ </section>
+
+
+
+
+
+
+
+<!-- Footer  -->
+
+<footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+  
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>AUTOWORLD</h3>
+            <p>
+                SD-1,<br>
+                Block A<br>
+                North Nazimabad Town, <br>
+                Karachi, 74700<br>
+              <strong>Phone:</strong> (021) 36630102<br>
+              <strong>Email:</strong> AutoWorld@gmail.com<br>
+            </p>
+          </div>
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="../AutoWorld/AutoWorld.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../About Us/About us.html">About Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../Search/tr.html">Brands</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../Compare/Compare.html">Camparision</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../Finance/Finance.html">Finance</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../warranty/warranty.html">Warranty</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../Contact us/contact.html">Contact Us</a></li>
+  
+  
+            </ul>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>BRANDS</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="../TOYOTA/TOYOTA.html">TOYOTA</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../BMW/BMW.html">BMW</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../Lambor/Lambor.html">LAMBORGHINI</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../Honda/Honda.html">HONDA</a></li>
+            </ul>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p style="text-transform: lowercase;">ENTER YOUR EMAIL TO RECEIVE UPDATES ON NEW PRODUCTS ANNOUNCEMENT, SPECIAL PROMOTIONS, SALES AND MORE</p>
+            <form action="#exampleModal">
+              <input type="email" name="email"><input required data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" value="Subscribe">
+            </form>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+    <div class="container d-md-flex py-4">
+  
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>AutoWorld</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          
+          Designed by <a  disabled>TAYYABA SAAD</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://autoworldjapan.blogspot.com/" class="twitter"  data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"><i class="fab fa-skype"></i></a>
+        <a href="https://www.facebook.com/autoworldjapan" class="facebook" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/autoworldjapan/" class="instagram" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"><i class="fab fa-instagram-square"></i></a>
+        <a href="https://twitter.com/autoworldjapan" class="google-plus" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/autoworld-international-ltd-/" class="linkedin" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  
+  
+  
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          
+  
+          <h5 class="modal-title text-dark" id="exampleModalLabel"><img src="Auto.png" width="15%" class="rounded-circle image-fluid" alt="">  AutoWorld</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-dark">
+          Thank You! for Subcribing to our Newsletter 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  </footer><!-- End Footer --> 
+
+
+
+
+
+
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+	
+
+
+<script>
+	AOS.init();
+
+$(document).ready(function(){
+                     $(window).scroll(function(){
+                     if($(window).scrollTop()>1){
+                       $("nav").css("background-color" , "white");
+                       $(".nav-link").css("color" , "black");
+                     //   $(".mega-menu").css("background-color" , "white");
+ 
+ 
+ 
+ 
+                     }
+                     else{
+                       $("nav").css("background" , "transparent");
+                       $(".nav-link").css("color" , "white");
+                     //   $(".mega-menu").css("background-color" , "white");
+                       $(".mega-menu .nav-link").css("color" , "black");
+ 
+ 
+                       
+ 
+ 
+ 
+                     }
+                     });
+                   });
+                    
+                  
+
+
+</script>
+
+
+</body>
+</html>                                		
