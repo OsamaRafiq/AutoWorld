@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance</title>
+    <link rel="icon" href="logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="Finance.css">
+<!---------- BOOTSTRAP CSS -------->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<!--------- FONT AWESOME  ------->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<!-- Font Awesome Kit JS -->
+<script src="https://kit.fontawesome.com/2c7fc28a2f.js"></script>
+
+<!-- ANIMATION css -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- animation js -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!-- <link rel="stylesheet" href="../AutoWorld/hover.css"> -->
+</head>
+<body>
+    
+    <!---------- JQUERY LINK --------->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+ <!---------- BOOTSTRAP JAVASCRIPT -------->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+
+
+
+
+
+
+
+    <!------------------------------------------------ NAV ------------------------------------------------------>
+
+    <header class="main-nav fixed-top">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-stream navbar-toggler-icon"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="../AutoWorld/AutoWorld.html"><img src="logo.png" alt="AutoWorldLogo" height="90px" width="100px" id="logo1" data-aos="flip-right" data-aos-duration="3000" data-aos-once="true"></a>
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link hvr-underline-from-left" href="../AutoWorld/AutoWorld.html">HOME  <i class="fas fa-home"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hvr-underline-from-left" href="../About Us/About us.html">ABOUT US  <i class="fas fa-users"></i></a>
+              </li>  
+               
+                   <li class="mega-drop-down"><a class="nav-link hvr-underline-from-left" href="../Search/tr.html">BRANDS  <i class="fas fa-car"></i> </a>
+                       <div class="animated fadeIn mega-menu" style="background-color: white">
+                           <div class="mega-menu-wrap">
+                               <div class="row">
+                               <div class="col-md-3" >
+                                   <h4 class="row mega-title " style="background-color: black">BMW</h4>
+                                   <ul class="stander">
+                                       <li><a class="nav-link hvr-underline-from-left" href="../Cars/i4/details.html">THE I4</a></li>
+                                       <li><a class="nav-link hvr-underline-from-left" href="../Cars/XM/details.html">THE X6 M</a></li>
+                                       <li><a class="nav-link hvr-underline-from-left" href="../Cars/THE M3/details.html">THE M3</a></li>
+                                       <li><a class="nav-link hvr-underline-from-left" href="../Cars/THE M4/details.html">THE M4</a></li>
+                                       <br>
+                                       <button onclick="document.location='../BMW/BMW.html'" type="button" class="btn btn-outline-dark">EXPLORE</button>
+                                   </ul>
+                                   </div>
+                                   <div class="col-md-3">
+                                           <h4 class="row mega-title" style="background-color: black">TOYOTA</h4>
+                                       <ul class="stander">
+                                           <li><a class="nav-link hvr-underline-from-left" href="../Cars/Prius Prime/details.html">PRIUS PRIME</a></li>
+                                           <li><a class="nav-link hvr-underline-from-left" href="../cars/Camry/details.html">CAMRY</a></li>
+                                           <li><a class="nav-link hvr-underline-from-left" href="../Cars/GR86/details.html">GR86</a></li>
+                                           <li><a class="nav-link hvr-underline-from-left" href="../Cars/supra/details.html">GR SUPRA</a></li>
+                                           <br>
+                                           <button onclick="document.location='../TOYOTA/TOYOTA.html'" type="button" class="btn btn-outline-dark">EXPLORE</button>
+                                       </ul>
+                                   </div>
+                                   <div class="col-md-3">
+                                       <h4 class="row mega-title" style="background-color: black">LAMBORGHINI</h4>
+                                       <ul class="stander">
+                                           <li><a class="nav-link hvr-underline-from-left" href="../Cars/Lambo Aventador/details.html">AVENTADOR</a></li>
+                                           <li><a class="nav-link hvr-underline-from-left" href="../Cars/Lambo SVJ/details.html">AVENTADOR SVJ</a></li>
+                                           <li><a class="nav-link hvr-underline-from-left" href="../Cars/Sian/details.html">SIAN ROADSTER</a></li>
+                                           <li><a class="nav-link hvr-underline-from-left" href="../Cars/Contach/details.html">COUNTACH</a></li>
+                                           <br>
+                                           <button onclick="document.location='../Lambor/Lambor.html'"  type="button" class="btn btn-outline-dark">EXPLORE</button>
+                                       </ul>
+                                   </div>
+                                   <div class="col-md-3">
+                                       <h4 class="row mega-title" style="background-color: black">HONDA</h4>
+                                       <ul class="stander">
+                                           <li><a class="nav-link hvr-underline-from-left" href="../Cars/Honda Accord/details.html">HONDA ACCORD</a></li>
+                                           <li><a class="nav-link hvr-underline-from-left" href="../Cars/civic sedan/details.html">CIVIC SEDAN</a></li>
+                                           <li><a class="nav-link hvr-underline-from-left" href="../Cars/civic hatch/details.html">CIVIC HATCHBAC</a></li>
+                                           <li><a class="nav-link hvr-underline-from-left" href="../Cars/Honda crv/details.html">HONDA CR-V</a></li>
+                                           <br>
+                                           <button onclick="document.location='../Honda/Honda.html'" type="button" class="btn btn-outline-dark">EXPLORE</button>
+                                       </ul>
+                                   </div>
+                                   
+                               </div>
+                           </div>	
+                       </div>
+                   </li>
+   
+              <li class="nav-item">
+                <a class="nav-link hvr-underline-from-left" href="../Compare/Compare.html">CAMPARISION  <i class="fab fa-bandcamp"></i></a>
+              </li>                                     
+             
+              <li class="nav-item">
+                <a class="nav-link hvr-underline-from-left" href="../Finance/Finance.html">FINANCE  <i class="fas fa-hand-holding-usd"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hvr-underline-from-left" href="../warranty/warranty.html">WARRANTY  <i class="fas fa-handshake"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link hvr-underline-from-left" href="../contact us/contact.html">CONTACT US  <i class="fas fa-address-book"></i></a>
+              </li>
+            
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header> 
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ======= Hero Section ======= -->
+  <section id="hero" >
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-right" data-aos-duration="3000" data-aos-once="true">
+          <h1>AUTOWORLD</h1>
+          <h2>FINANCIAL SERVICES</h2>
+          <div class="d-flex justify-content-center justify-content-lg-start ">
+            <a href="#pric" class="btn-get-started scrollto">Get Started</a>
+            
+          </div>
+        </div>
+        <!-- <div class="col-lg-10 order-1 order-lg-2 hero-img " data-aos="zoom-in" data-aos-delay="200">
+          <img  src="supra.jpg" class="img-fluid animated rounded-circle w-25" alt=""> -->
+        </div> 
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+
+<a href="" id="button"></a>
+
+
+<br>
+<br>
+<br>
+<br>
+
+<div >
+
+<img class="scar" src="car-salesman-holding-key-calculating-price-dealership-office.jpg"  alt="" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">
+<div class="shadow-lg p-3 mb-5 bg-body rounded "  ><p class="text-center" style="font-family: 'Franklin Gothic heavy';font-size: 5.5vw;" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">FINANCIAL SERVICES</p>
+<p style="font-size: 1vw;" class="text-center" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">  Envision yourself driving a technologically advanced, cutting edge cars. Can you feel its strength and power from behind the steering wheel? Good. Now consider this.
+    Why only imagine it when, thanks to AutoWorld Financial Services, you could actually drive off in your very own Car?
+    Now you can lie back, and enjoy your bespoke very own car, thanks to AutoWorld Financial Services. <br><br>
+
+    AutoWorld Financial Services offers flexible leasing and financing solutions to provide you with an incredible experience and AutoWorld ownership.
+    Whether you prefer to lease or purchase your dream car, we understand your needs and will be sure to give you our utmost support and to guide you in your new, or pre-owned, selection. 
+    Realize your dreams by visiting your local Authorized AutoWorld Dealer, and let them pave the way for a brand new, seamless experience.
+    Be unstoppable. Start your exclusive journey with AutoWorld Financial Services.
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="container">
+    <h4 style="font-size: 2.5vw;" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">EASY STEP</h4>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="main-timeline">
+                <a href="#" class="timeline" data-aos="fade-right" data-aos-duration="3000" data-aos-once="true">
+                    <div class="timeline-icon"><i class="fas fa-car"></i></div>
+                    <div class="timeline-content">
+                        <h3 class="title">CHOOSE YOUR DREAM CAR</h3>
+                        <p class="description">
+                            Forget about going to banks and waiting for your turn 
+                            Now,AUTOWORLD provides best Finance Schemes for their Customers
+                            Your dream car is just 4 more steps away from you                               </p>
+                    </div>
+                </a>
+                <a href="#" class="timeline" data-aos="fade-left" data-aos-duration="3000" data-aos-once="true">
+                    <div class="timeline-icon"><i class="fas fa-money-check-alt"></i></div>
+                    <div class="timeline-content">
+                        <h3 class="title">Mode of Financing</h3>
+                        <p class="description">
+                            AUTOWORLD Finance is here to help you get your favorite Toyota car financed most conveniently.
+                            Choose the mode that you want. Conventional or Islamic or RV? We got you covered                                </p>
+                    </div>
+                </a>
+                <a href="#" class="timeline" data-aos="fade-right" data-aos-duration="3000" data-aos-once="true">
+                    <div class="timeline-icon"><i class="fas fa-calculator"></i></div>
+                    <div class="timeline-content">
+                        <h3 class="title">Budget it out!</h3>
+                        <p class="description">
+                            All you have to do is apply online and then wait for your AUTOWORLD to arrive at the dealership.
+                            Just select options as per your convenience and we’ll do the calculations for you                                </p>
+                    </div>
+                </a>
+               
+                <a href="#" class="timeline" data-aos="fade-left" data-aos-duration="3000" data-aos-once="true">
+                    <div class="timeline-icon"><i class="fas fa-location-arrow"></i></div>
+                    <div class="timeline-content">
+                        <h3 class="title">Finalize Your Application</h3>
+                        <p class="description">
+                            Special comprehensive insurance rates
+                            Upload all required information and documentation to finish your application!  
+                            For further details,Register your financing application while at home or office.
+                                                  </p>
+                    </div>
+                </a>
+                <a href="#" class="timeline" data-aos="fade-right" data-aos-duration="3000" data-aos-once="true">
+                    <div class="timeline-icon"><i class="fas fa-edit"></i></div>
+                    <div class="timeline-content">
+                        <h3 class="title">Track Your Case</h3>
+                        <p class="description">
+                            All you need to do now is sit back and track your case using your CNIC and case ID. feel free to contact AUTOWORLD Smart Finance Specialist,Your AUTOWORLD will be on its way soon.                               </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+
+ 
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Table  -->
+
+
+<h3 class="tab" data-aos="fade-down" data-aos-duration="3000" data-aos-once="true">PRODUCT PROFIT RATES*</h3>
+<div class="table-wrapper" data-aos="fade-down" data-aos-duration="3000" data-aos-once="true">
+    <table class="fl-table">
+        <thead>
+        <tr>
+            <th>Financing Tenure</th>
+            <th>1 Year</th>
+            <th>2 Year</th>
+            <th>3 Year</th>
+            <th>4 Year</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>For Lien Based</td>
+            <td>7.25%</td>
+            <td>8.25%</td>
+            <td>8.50%</td>
+            <td>9.00%</td>
+        </tr>
+        <tr>
+            <td>For Non Lien Based</td>
+            <td>16.25%</td>
+            <td>15.25%</td>
+            <td>14.50%</td>
+            <td>14.27%</td>
+        </tr>
+        
+        <tbody>
+            
+    </table>
+    <center><td class="text-center" >Above Mentioned Rates Can be revised based on Deposit and PKRV rate at time of dibursement</td></center>
+
+    
+</div>
+
+
+
+
+<!-- Terms  -->
+
+
+<section class="cta" >
+    <br>
+    
+    
+    <h1 style="font-size: 5.5vw;font-family: 'Franklin Gothic heavy';" class="text-center text-light fw-bold" data-aos="fade-down" data-aos-duration="3000" data-aos-once="true">TERMS AND CONDITIONS</h1> <br>
+    
+    <div class="page__container">
+        <a id="go" style="font-size: 1.1vw;" href="#popup-article1" class="open-popup btn btn-primary btn-lg hvr-shrink" data-aos="flip-right" data-aos-duration="3000" data-aos-once="true">READ MORE</a>
+      </div>
+    </div>
+
+
+</section>
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+<!-- Packages  -->
+
+
+<section id="pric" class="pricing-section">
+    <div class="container">
+		<div class="row justify-content-md-center">
+			<div class="col-xl-5 col-lg-6 col-md-8">
+				<div class="section-title text-center title-ex1">
+					<h2 data-aos="fade-down" data-aos-duration="2000" data-aos-once="true">INSTALLMENTS PLANS</h2>
+					<p data-aos="fade-down" data-aos-duration="2000" data-aos-once="true">Do you want to customize your payment plan as per your conditions? If yes, then you have landed at the right place</p>
+				</div>
+			</div>
+		</div>
+		<!-- Pricing Table starts -->
+		<div class="row">
+			<div class="col-md-4" data-aos="fade-down" data-aos-duration="3000" data-aos-once="true">
+				<div class="price-card ">
+					<h2>STANDARD</h2>
+					<p>Basic version</p>
+					<p class="price"><span>7</span>/ Year</p>
+					<ul class="pricing-offers">
+                        <li>10% Off in Security Deposit</li>
+						<li>10% Off in Delivery Charges</li>
+						<li>30% Load Provided</li>
+						<li>84 months installments</li>
+						<li>10% off in documentation charges </li>
+
+						
+					</ul>
+					<a href="#" class="btn btn-primary btn-mid">Buy Now</a>
+				</div>
+			</div>
+			<div class="col-md-4" data-aos="fade-down" data-aos-duration="3000" data-aos-once="true">
+				<div class="price-card featured">
+					<h2>PRO</h2>
+					<p>Professional Version</p>
+					<p class="price"><span>5</span>/ Year</p>
+					<ul class="pricing-offers">
+						<li>30% Off in Security Deposit</li>
+						<li>30% Off in Delivery Charges</li>
+						<li>50% Load Provided</li>
+						<li>60 months installments</li>
+						<li>10% off in documentation charges </li>
+					</ul>
+					<a href="#" class="btn btn-primary btn-mid">Buy Now</a>
+				</div>
+			</div>
+			<div class="col-md-4" data-aos="fade-down" data-aos-duration="3000" data-aos-once="true">
+				<div class="price-card ">
+					<h2>PREMIUM</h2>
+					<p>Special Version</p>
+					<p class="price"><span>3</span>/ Year</p>
+					<ul class="pricing-offers">
+						<li>50% Off in Security Deposit</li>
+						<li>100% Off in Delivery Charges</li>
+						<li>75% Load Provided</li>
+						<li>36 months installments</li>
+						<li>100% off in documentation charges </li>
+					</ul>
+					<a href="#" class="btn btn-primary btn-mid">Buy Now</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<!-- Brands  -->
+
+
+
+<section class="cta1" >
+    
+    
+    
+    <h1 style="font-size: 5.2vw;font-family: 'Franklin Gothic Heavy';" class="text-center text-light fw-bold" data-aos="fade-down" data-aos-duration="2000" data-aos-once="true">FINANCE SCHEMES</h1>
+    <br>
+    <br>
+    <br>
+    <div  id="war" class="d-flex justify-content-around row" >
+    
+    
+    
+    <!-- Card 1  -->
+    
+    
+    
+    
+    
+    <div class="card col-4 " style="width: 21rem;" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">
+      <img class="card-img-top" src="toyota-logo-1989-1400x1200.png" alt="Card image cap"><br>
+      <div class="card-body">
+        
+      </div>
+      <div class="page__container">
+        <a style="font-size: 1.1vw;" href="toyotafinance.html" class="open-popup btn btn-dark hvr-shutter-in-vertical " data-aos="flip-right" data-aos-duration="3000" data-aos-once="true">READ MORE</a>
+     
+     
+     
+     
+      </div>
+    </div>
+    
+    
+    
+    
+    <!-- Card 2  -->
+    
+    
+    <div class="card col-4 " style="width: 19rem;" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">
+      <img class="card-img-top" src="bmw-logo-1997-1200x1200.png" alt="Card image cap"> 
+      <div class="card-body">
+        
+      </div>
+      <div class="page__container">
+        <a style="font-size: 1.1vw;" href="FINANCE BMW.html" class="open-popup btn btn-dark hvr-shutter-in-vertical" data-aos="flip-right" data-aos-duration="3000" data-aos-once="true">READ MORE</a>
+      </div>
+    </div>
+    
+    
+    </div>
+    
+    <br>
+    <br>
+    <br>
+    
+    
+    <div class="d-flex justify-content-around row" >
+    
+    <!-- Card 3  -->
+    
+    
+    <div class="card col-4 " style="width: 24rem;" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">
+      <img class="card-img-top" src="honda-logo-1700x1150 (1).png" alt="Card image cap"> 
+      <div class="card-body">
+       
+      </div>
+      <div class="page__container">
+        <a style="font-size: 1.1vw;" href="financehonda.html" class="open-popup btn btn-dark hvr-shutter-in-vertical
+        " data-aos="flip-right" data-aos-duration="3000" data-aos-once="true">READ MORE</a>
+      </div>
+    </div>
+    
+    
+    
+    
+    
+    
+    
+    <!-- Card 4  -->
+    
+    
+    <div class="card col-4 " style="width: 18rem;" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true" >
+      <img class="card-img-top img-fluid" src="lamborghini-logo-1000x1100.png" alt="Card image cap">
+      <div class="card-body">
+        
+      </div>
+      <div class="page__container">
+        <a style="font-size: 1.1vw;" href="Lamfinance.html" class="open-popup btn btn-dark hvr-shutter-in-vertical
+        " data-aos="flip-right" data-aos-duration="3000" data-aos-once="true">READ MORE</a>
+      </div>
+    </div>
+    
+    
+    </div>
+    
+    
+    
+    </div>
+    
+    
+    
+    </section>
+
+
+
+
+
+
+
+<br>
+
+<br>
+
+<br>
+<!-- Banks  -->
+
+
+
+<div  data-aos="fade-down" data-aos-duration="2000" data-aos-once="true">
+
+  <img class="scar" src="2666341.jpg"  alt=""  >
+  <div class="shadow-lg p-3 mb-5 bg-body rounded " ><p class="text-center" style="font-family: 'Franklin Gothic heavy';font-size: 5.5vw;" >BANKS</p>
+  <p style="font-size: 1.3vw;font-family: Arial, Helvetica, sans-serif;" class="text-center" >AutoWorld Collaborate with different banks many options available for our customers so they can easily apply for car loan through AutoWrold Finance Program
+    AutoWorld offers UBL , MCB , SILK , HBL & Meezan Bank for their customers 
+  </p>
+  <br>
+<center>  <a href="bank.html" class="btn btn-outline-primary" data-aos="flip-right" data-aos-duration="3000" data-aos-once="true">READ MORE</a>
+</center>
+  <br>
+  
+  </div>
+  </div>
+
+<!-- <div class="text-center shadow-lg p-3 mb-5 bg-white rounded " >
+  
+  <div class="row" >
+
+  <h1 class="fw-bold " style="font-size: 4vw;" >BANKS</h1>
+  <center><p class="col-5 justify-content-center " style="font-size: 1.2vw;">AutoWorld Collaborate with different banks making so many options available for our customers so they can easily apply for car loan through AutoWrold Finance Program </p></center>
+</div>
+<a href="bank.html" class="btn btn-primary" >READ MORE</a>
+
+</div> -->
+
+
+
+
+
+
+
+<!-- Modal  -->
+
+
+<div class="page">
+    
+</div>
+  <div id="popup-article1" class="popup">
+    <div class="popup__container">
+      <a href="#cta" class="popup__close">
+        <span class="screen-reader"></span>
+      </a>  
+      <h1 class="text-center" style="font-size: 5vw;font-family: 'Franklin Gothic heavy';" >TERMS AND CONDITIONS</h1>
+
+      
+            <div class="col-lg-7 mx-auto" >               
+        
+                <div class="card shadow mb-4">
+                    <div class="card-body p-5">
+                        <!-- List with icons -->
+                        <h4 class="row justify-content-center" style="font-size: 1.2vw;" data-aos="fade-down" data-aos-duration="3000" data-aos-once="true">Eligibility Criteria</h4>
+                        <ul class="list-unstyled list pl-5" >
+                            <li class="mb-3 d-flex align-items-center" style="font-size: 1vw;"> <i class="fas fa-coins mr-3 text-primary"></i> Financing facility for new locally assembled and Complete Built Up (CBU) vehicles</li>
+                            <li class="mb-3 d-flex align-items-center" style="font-size: 1vw;"><i class="fas fa-coins mr-3 text-primary"></i>  Security deposit / Advance rental: Minimum 15% and maximum 50% of the cost of vehicle</li>
+                            <li class="mb-3 d-flex align-items-center" style="font-size: 1vw;"><i class="fas fa-coins mr-3 text-primary"></i>  Both data check & e-CIB should be clear and must not have default / overdue at the time of case approval</li>
+                            <li class="mb-3 d-flex align-items-center" style="font-size: 1vw;"><i class="fas fa-coins   mr-3 text-primary"></i>  The facility is available for all Roshan Digital Account holders including foreign currency account holders</li>
+                            <li class="mb-3 d-flex align-items-center" style="font-size: 1vw;"><i class="fas fa-coins   mr-3 text-primary"></i>  No processing charges. Documentation and security perfection charges are to be paid at actual by the applicant at the time of disbursement of the cas</li>
+                            <li class="mb-3 d-flex align-items-center" style="font-size: 1vw;"><i class="fas fa-coins   mr-3 text-primary"></i>  Monthly Rentals are to be paid through direct debit instructions from PKR Roshan Digital Account</li> 
+                            <li class="mb-3 d-flex align-items-center" style="font-size: 1vw;"><i class="fas fa-coins   mr-3 text-primary"></i>  The vehicle would be delivered to the nominee / co-borrower (blood relative – father / mother, son / daughter, brother/ sister or spouse residing in Pakistan) of applicant</li>
+                            <li class="mb-3 d-flex align-items-center" style="font-size: 1vw;"><i class="fas fa-coins   mr-3 text-primary"></i>  The maximum age of authorized nominee / co-borrower should not be above 70 years at the time of Ijarah maturity.</li> 
+                            <li class="mb-3 d-flex align-items-center" style="font-size: 1vw;"><i class="fas fa-coins   mr-3 text-primary"></i>  In case of a non-filer, 4 % Advance Tax on the Cost of Vehicle will be applicable at the time of vehicle disbursement.</li>
+                            <li class="mb-3 d-flex align-items-center" style="font-size: 1vw;"><i class="fas fa-coins   mr-3 text-primary"></i>  Minimum age limit of applicant should be 25 years</li>
+                            <li class="mb-3 d-flex align-items-center" style="font-size: 1vw;"><i class="fas fa-coins   mr-3 text-primary"></i>  Maximum age limit of applicant at time of maturity should not exceed 60 years for salaried professional.</li> 
+                            <li class="mb-3 d-flex align-items-center" style="font-size: 1vw;"><i class="fas fa-coins   mr-3 text-primary"></i>  Maximum age limit of applicant at time of maturity should not exceed 65 years for businessman / self-employed professional</li>
+                            <li class="mb-3 d-flex align-items-center" style="font-size: 1vw;"><i class="fas fa-coins   mr-3 text-primary"></i>  Minimum 2 years continuous employment history in current employment for salaried professionals.</li>
+                            <li class="mb-3 d-flex align-items-center" style="font-size: 1vw;"><i class="fas fa-coins   mr-3 text-primary"></i>  Minimum business experience 3 years continuous involvement in current business / industry for businessman / self-employed professional.</li>
+                            <li class="mb-3 d-flex align-items-center" style="font-size: 1vw;"><i class="fas fa-coins   mr-3 text-primary"></i>  If the applicant has availed other financing facilities, all monthly repayments combined, including proposed Ijarah rental, should not exceed 40% of net / take-home income</li>
+                        </ul>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+    <!----------------------------- FOOTER ----------------------->
+
+    <footer id="footer">
+
+      <div class="footer-top">
+        <div class="container">
+          <div class="row">
+    
+            <div class="col-lg-3 col-md-6 footer-contact">
+              <h3>AUTOWORLD</h3>
+              <p>
+                  SD-1,<br>
+                  Block A<br>
+                  North Nazimabad Town, <br>
+                  Karachi, 74700<br>
+                <strong>Phone:</strong> (021) 36630102<br>
+                <strong>Email:</strong> AutoWorld@gmail.com<br>
+              </p>
+            </div>
+            <div class="col-lg-2 col-md-6 footer-links">
+              <h5>Useful Links</h5>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="../AutoWorld/AutoWorld.html">Home</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="../About Us/About us.html">About Us</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="../Search/tr.html">Brands</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="../Compare/Compare.html">Camparision</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="../Finance/Finance.html">Finance</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="../warranty/warranty.html">Warranty</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="../Contact us/contact.html">Contact Us</a></li>
+    
+    
+              </ul>
+            </div>
+    
+            <div class="col-lg-3 col-md-6 footer-links">
+              <h5>BRANDS</h5>
+              <ul>
+                <li><i class="bx bx-chevron-right"></i> <a href="../TOYOTA/TOYOTA.html">TOYOTA</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="../BMW/BMW.html">BMW</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="../Lambor/Lambor.html">LAMBORGHINI</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="../Honda/Honda.html">HONDA</a></li>
+              </ul>
+            </div>
+    
+            <div class="col-lg-4 col-md-6 footer-newsletter">
+              <h3>Join Our Newsletter</h3>
+              <p style="text-transform: lowercase;">ENTER YOUR EMAIL TO RECEIVE UPDATES ON NEW PRODUCTS ANNOUNCEMENT, SPECIAL PROMOTIONS, SALES AND MORE</p>
+              <form action="#exampleModal">
+                <input type="email" name="email"><input required data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" value="Subscribe">
+              </form>
+            </div>
+    
+          </div>
+        </div>
+      </div>
+    
+      <div class="container d-md-flex py-4">
+    
+        <div class="me-md-auto text-center text-md-start">
+          <div class="copyright">
+            &copy; Copyright <strong><span>AutoWorld</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+            
+            Designed by <a  disabled>TAYYABA SAAD</a>
+          </div>
+        </div>
+        <div class="social-links text-center text-md-right pt-3 pt-md-0">
+          <a href="https://autoworldjapan.blogspot.com/" class="twitter"  data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"><i class="fab fa-skype"></i></a>
+          <a href="https://www.facebook.com/autoworldjapan" class="facebook" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com/autoworldjapan/" class="instagram" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"><i class="fab fa-instagram-square"></i></a>
+          <a href="https://twitter.com/autoworldjapan" class="google-plus" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/company/autoworld-international-ltd-/" class="linkedin" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    
+    
+    
+    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            
+    
+            <h5 class="modal-title text-dark" id="exampleModalLabel"><img src="Auto.png" width="15%" class="rounded-circle image-fluid" alt="">  AutoWorld</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-dark">
+            Thank You! for Subcribing to our Newsletter 
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    </footer><!-- End Footer --> 
+    
+  
+
+
+</body>
+<script>
+  $(document).ready(function(){
+                   $(window).scroll(function(){
+                   if($(window).scrollTop()>1){
+                     $("nav").css("background-color" , "white");
+                     $(".nav-link").css("color" , "black");
+                   //   $(".mega-menu").css("background-color" , "white");
+
+
+
+
+                   }
+                   else{
+                     $("nav").css("background" , "transparent");
+                     $(".nav-link").css("color" , "white");
+                   //   $(".mega-menu").css("background-color" , "white");
+                     $(".mega-menu .nav-link").css("color" , "black");
+
+
+                     
+
+
+
+                   }
+                   });
+                 });
+
+
+        $(document).ready(function(){
+          $("#go").click(function(){
+            $("nav").hide();
+          });
+          $(".popup__close").click(function(){
+            $("nav").show();
+          });
+        });
+
+
+        var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
+</script>
+<script>
+ AOS.init();
+</script>
+</html>
