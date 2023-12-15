@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare</title>
+    <link rel="icon" href="auto.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+    <!-- jquery cdn  -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- <link rel="stylesheet" href="compare.css"> -->
+  <link rel="stylesheet" href="try.css">
+
+  <!-- ANIMATION  CSS-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   <!-- animation js -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+  
+</head>
+<body>
+    
+
+
+
+
+
+
+
+  
+ <!----------- NAV --------------->
+   
+ <header class="main-nav fixed-top">
+   
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-stream navbar-toggler-icon"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand" href="../AutoWorld/AutoWorld.html"><img src="Auto.png" alt="AutoWorldLogo" height="90px" width="100px" id="logo1" data-aos="flip-right" data-aos-duration="3000" data-aos-once="true"></a>
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link hvr-underline-from-left" href="../AutoWorld/AutoWorld.html">HOME  <i class="fas fa-home"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hvr-underline-from-left" href="../About Us/About us.html">ABOUT US  <i class="fas fa-users"></i></a>
+          </li>  
+           
+               <li class="mega-drop-down"><a class="nav-link hvr-underline-from-left" href="../Search/tr.html">BRANDS  <i class="fas fa-car"></i> </a>
+                   <div class="animated fadeIn mega-menu" style="background-color: white">
+                       <div class="mega-menu-wrap">
+                           <div class="row">
+                           <div class="col-md-3" >
+                               <h4 class="row mega-title " style="background-color: black">BMW</h4>
+                               <ul class="stander">
+                                   <li><a class="nav-link hvr-underline-from-left" href="../Cars/i4/details.html">THE I4</a></li>
+                                   <li><a class="nav-link hvr-underline-from-left" href="../Cars/XM/details.html">THE X6 M</a></li>
+                                   <li><a class="nav-link hvr-underline-from-left" href="../Cars/THE M3/details.html">THE M3</a></li>
+                                   <li><a class="nav-link hvr-underline-from-left" href="../Cars/THE M4/details.html">THE M4</a></li>
+                                   <br>
+                                   <button onclick="document.location='../BMW/BMW.html'" type="button" class="btn btn-outline-dark">EXPLORE</button>
+                               </ul>
+                               </div>
+                               <div class="col-md-3">
+                                       <h4 class="row mega-title" style="background-color: black">TOYOTA</h4>
+                                   <ul class="stander">
+                                       <li><a class="nav-link hvr-underline-from-left" href="../Cars/Prius Prime/details.html">PRIUS PRIME</a></li>
+                                       <li><a class="nav-link hvr-underline-from-left" href="../cars/Camry/details.html">CAMRY</a></li>
+                                       <li><a class="nav-link hvr-underline-from-left" href="../Cars/GR86/details.html">GR86</a></li>
+                                       <li><a class="nav-link hvr-underline-from-left" href="../Cars/supra/details.html">GR SUPRA</a></li>
+                                       <br>
+                                       <button onclick="document.location='../TOYOTA/TOYOTA.html'" type="button" class="btn btn-outline-dark">EXPLORE</button>
+                                   </ul>
+                               </div>
+                               <div class="col-md-3">
+                                   <h4 class="row mega-title" style="background-color: black">LAMBORGHINI</h4>
+                                   <ul class="stander">
+                                       <li><a class="nav-link hvr-underline-from-left" href="../Cars/Lambo Aventador/details.html">AVENTADOR</a></li>
+                                       <li><a class="nav-link hvr-underline-from-left" href="../Cars/Lambo SVJ/details.html">AVENTADOR SVJ</a></li>
+                                       <li><a class="nav-link hvr-underline-from-left" href="../Cars/Sian/details.html">SIAN ROADSTER</a></li>
+                                       <li><a class="nav-link hvr-underline-from-left" href="../Cars/Contach/details.html">COUNTACH</a></li>
+                                       <br>
+                                       <button onclick="document.location='../Lambor/Lambor.html'"  type="button" class="btn btn-outline-dark">EXPLORE</button>
+                                   </ul>
+                               </div>
+                               <div class="col-md-3">
+                                   <h4 class="row mega-title" style="background-color: black">HONDA</h4>
+                                   <ul class="stander">
+                                       <li><a class="nav-link hvr-underline-from-left" href="../Cars/Honda Accord/details.html">HONDA ACCORD</a></li>
+                                       <li><a class="nav-link hvr-underline-from-left" href="../Cars/civic sedan/details.html">CIVIC SEDAN</a></li>
+                                       <li><a class="nav-link hvr-underline-from-left" href="../Cars/civic hatch/details.html">CIVIC HATCHBAC</a></li>
+                                       <li><a class="nav-link hvr-underline-from-left" href="../Cars/Honda crv/details.html">HONDA CR-V</a></li>
+                                       <br>
+                                       <button onclick="document.location='../Honda/Honda.html'" type="button" class="btn btn-outline-dark">EXPLORE</button>
+                                   </ul>
+                               </div>
+                               
+                           </div>
+                       </div>	
+                   </div>
+               </li>
+
+          <li class="nav-item">
+            <a class="nav-link hvr-underline-from-left" href="../Compare/Compare.html">CAMPARISION  <i class="fab fa-bandcamp"></i></a>
+          </li>                                     
+         
+          <li class="nav-item">
+            <a class="nav-link hvr-underline-from-left" href="../Finance/Finance.html">FINANCE  <i class="fas fa-hand-holding-usd"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hvr-underline-from-left" href="../warranty/warranty.html">WARRANTY  <i class="fas fa-handshake"></i></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link hvr-underline-from-left" href="../contact us/contact.html">CONTACT US  <i class="fas fa-address-book"></i></a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header> 
+
+
+
+
+
+
+
+<!-- Header  -->
+
+
+<div class="splitview skewed">
+  <div class="panel bottom">
+      <div class="content">
+          <div class="description" >
+              <h1 style="font-size: 3vw;"  class="fw-bold" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" >Toyota Supra</h1>
+              <p style="font-size: 1vw;text-align: center;"   data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">Supra 2022 Model has been named as the best sports car of Toyota</p>
+          </div>
+
+          <img style="width: 50%;height: auto;" src="https://th.bing.com/th/id/R.20d7125ca3604f9278e1bb2bbc6b01c8?rik=zTMz2MR%2bnMiJcQ&pid=ImgRaw&r=0">
+      </div>
+  </div>
+  
+  <div class="panel top">'
+    '
+      <div class="content">
+          <div class="description">
+              <h1 style="font-size: 2.8vw;"  class="fw-bold" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">Lamborghini Urus</h1>
+              <p data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">Urus 2022 one of the most advanced Sports car of the world</p>
+          </div>
+
+          <img style="width: 45%;height: auto;" src="https://th.bing.com/th/id/R.2a5f98ad1c61225f595f2d443492484a?rik=Gm9yOSnH1BFDvQ&pid=ImgRaw&r=0&sres=1&sresct=1" alt="Duotone">
+      </div>
+  </div>
+
+  <div class="handle"></div>
+</div>
+
+<a href="" id="button"></a>
+
+
+  <br>
+  <br>
+  <br>
+  
+  <br>
+
+
+
+<div data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+  
+  <img class="scar" src="Choose-Car-Photo.jpg"  alt="" >
+  <div class="shadow-lg p-3 mb-5 bg-body rounded "  ><p class="text-center" style="font-family: 'Franklin Gothic heavy';font-size: 5.5vw;" >COMPARE YOUR CAR</p>
+  <p style="font-size: 1vw;" >  AutoWorld "Compare Car" is a Our powerful car comparison tool lets you compare multiple vehicles, so you can see how they stack up at a glance. Compare features, warranties, engines, fuel. AutoWorld leading digital marketplace and solutions provider for the automotive industry that connects car shoppers with sellers and provide information about their brands and car models .We Try to provide our customer the very best so they can easily find what they are looking for Select the car of your choice and make the comparison to see which car meets the requirements you are looking for the Company empowers shoppers with the data, resources and digital tools needed to make informed buying decisions and seamlessly connect with automotive retailers. <br> <br> </p>
+  
+  
+  </div>
+</div>
+
+
+
+  <br>
+
+  <br>
+  <br>
+  <br>
+  <br>
+ 
+
+
+
+
+
+<h1 style="font-size: 4vw;font-family: 'Franklin Gothic heavy';" class="fw-bold text-center"data-aos="fade-up" data-aos-duration="2000" data-aos-once="true" > COMPARE </h1>
+
+
+<br>
+<br>
+
+
+<!-- star-main-content -->
+
+<div class="d-flex justify-content-sm-around " >
+
+<div class="first" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+
+    
+<center><select  class="opt" id="opt2">
+       
+</select></center>
+<div class=" bg-light shadow-lg p-3 mb-5 bg-body " >
+
+<div style="display: flex;flex-direction: column;text-align: center;" >
+
+<img id="img" class="img-fluid align-self-center" src="download.png" alt="" data-aos="zoom-in" data-aos-duration="2000" data-aos-once="true">
+
+                        <h3 style="font-size: 2.5vw;" class="display-6" >Specifications</h3 >
+                        <p style="font-size: 1.1vw;" id="comp1"></p>
+                        <p style="font-size: 1.1vw;" id="comp2">       </p>
+                        <p style="font-size: 1.1vw;" id="comp3">    </p>
+                        <p style="font-size: 1.1vw;" id="comp4">     </p>
+                        <p style="font-size: 1.1vw;" id="comp5">     </p>
+                        <p style="font-size: 1.1vw;" id="comp6">     </p>
+
+                    </div>
+
+</div>
+</div>
+<button class="fw-bold" style="height: auto;width: 10vw;background-color: white;color: black;font-size: 5vw;border: none;" disabled type="disabled" onclick="fun()" data-aos="flip-right" data-aos-duration="2000" data-aos-once="true">VS</button>
+
+
+
+<div class="first  " data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+
+    <center><select  class="selection" id="selection">
+           
+    </select></center>
+    
+<div class=" bg-light shadow-lg p-3 mb-5 bg-body rounded" >
+
+    <div style="display: flex;flex-direction: column;text-align: center;" >
+    
+     <img id="img11" class="img-fluid align-self-center  " src="download.png" data-aos="zoom-in" data-aos-duration="2000" data-aos-once="true">
+    
+                            <h3 style="font-size: 2.5vw;"  class="display-6" >Specifications</h3 >
+                            <p style="font-size: 1.1vw;" id="comp11"></p>
+                            <p style="font-size: 1.1vw;" id="comp21">       </p>
+                            <p style="font-size: 1.1vw;" id="comp31">    </p>
+                            <p style="font-size: 1.1vw;" id="comp41">     </p>
+                            <p style="font-size: 1.1vw;" id="comp42">     </p>
+                            <p style="font-size: 1.1vw;" id="comp43">     </p>
+    
+                        </div>
+    
+    </div>
+</div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+<br><br><br>
+
+          <!-- Footer  -->
+
+<footer id="footer">
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>AUTOWORLD</h3>
+          <p>
+              SD-1,<br>
+              Block A<br>
+              North Nazimabad Town, <br>
+              Karachi, 74700<br>
+            <strong>Phone:</strong> (021) 36630102<br>
+            <strong>Email:</strong> AutoWorld@gmail.com<br>
+          </p>
+        </div>
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="../AutoWorld/AutoWorld.html">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="../About Us/About us.html">About Us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="../Search/tr.html">Brands</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="../Compare/Compare.html">Camparision</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="../Finance/Finance.html">Finance</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="../warranty/warranty.html">Warranty</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="../Contact us/contact.html">Contact Us</a></li>
+
+
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>BRANDS</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="../TOYOTA/TOYOTA.html">TOYOTA</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="../BMW/BMW.html">BMW</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="../Lambor/Lambor.html">LAMBORGHINI</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="../Honda/Honda.html">HONDA</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-newsletter">
+          <h4>Join Our Newsletter</h4>
+          <p style="text-transform: lowercase;">ENTER YOUR EMAIL TO RECEIVE UPDATES ON NEW PRODUCTS ANNOUNCEMENT, SPECIAL PROMOTIONS, SALES AND MORE</p>
+          <form action="#exampleModal">
+            <input type="email" name="email"><input required data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" value="Subscribe">
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container d-md-flex py-4">
+
+    <div class="me-md-auto text-center text-md-start">
+      <div class="copyright">
+        &copy; Copyright <strong><span>AutoWorld</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        
+        Designed by <a  disabled>TAYYABA SAAD</a>
+      </div>
+    </div>
+    <div class="social-links text-center text-md-right pt-3 pt-md-0">
+      <a href="https://autoworldjapan.blogspot.com/" class="twitter"  data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"><i class="fab fa-skype"></i></a>
+      <a href="https://www.facebook.com/autoworldjapan" class="facebook" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://www.instagram.com/autoworldjapan/" class="instagram" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"><i class="fab fa-instagram-square"></i></a>
+      <a href="https://twitter.com/autoworldjapan" class="google-plus" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/autoworld-international-ltd-/" class="linkedin" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+
+        <h5 class="modal-title text-dark" id="exampleModalLabel"><img src="Auto.png" width="15%" class="rounded-circle image-fluid" alt="">  AutoWorld</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-dark">
+        Thank You! for Subcribing to our Newsletter 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</footer><!-- End Footer --> 
+
+    <script src="compare.js"></script>
+</body>
+<script>
+  AOS.init();
+
+  $(document).ready(function(){
+                     $(window).scroll(function(){
+                     if($(window).scrollTop()>1){
+                       $("nav").css("background-color" , "white");
+                       $(".nav-link").css("color" , "black");
+                     //   $(".mega-menu").css("background-color" , "white");
+ 
+ 
+ 
+ 
+                     }
+                     else{
+                       $("nav").css("background" , "transparent");
+                       $(".nav-link").css("color" , "white");
+                     //   $(".mega-menu").css("background-color" , "white");
+                       $(".mega-menu .nav-link").css("color" , "black");
+ 
+ 
+                       
+ 
+ 
+ 
+                     }
+                     });
+                   });
+
+
+                   var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
+</script>
+</html>
