@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honda</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="honda.css">
+    <link rel="icon" href="auto.png">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <!--------- FONT AWESOME  ------->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+ <!-- Font Awesome Kit JS -->
+ <script src="https://kit.fontawesome.com/2c7fc28a2f.js"></script>
+
+<!-- Animation  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+
+<!-- ANIMATION css -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+<!-- animation js -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+</head>
+<body>
+    
+
+
+                   <!-- NAVBAR -->
+                           <!-- 1. Home page which will brief about the company, also design a suitable logo  and
+                                   include it on home page, you may display the logo on all the pages in the  site.  -->
+                                   <header class="main-nav fixed-top">
+   
+                                    <nav class="navbar navbar-expand-lg">
+                                      <div class="container-fluid">
+                                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                                          <i class="fas fa-stream navbar-toggler-icon"></i>
+                                        </button>
+                                        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                                          <a class="navbar-brand" href="../AutoWorld/AutoWorld.html"><img src="Auto.png" alt="AutoWorldLogo" height="90px" width="100px" id="logo1" data-aos="flip-right" data-aos-duration="3000" data-aos-once="true"></a>
+                                          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                            <li class="nav-item">
+                                              <a class="nav-link hvr-underline-from-left" href="../AutoWorld/AutoWorld.html">HOME  <i class="fas fa-home"></i></a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a class="nav-link hvr-underline-from-left" href="../About Us/About us.html">ABOUT US  <i class="fas fa-users"></i></a>
+                                            </li>  
+                                             
+                                                 <li class="mega-drop-down"><a class="nav-link hvr-underline-from-left" href="../Search/tr.html">BRANDS  <i class="fas fa-car"></i> </a>
+                                                     <div class="animated fadeIn mega-menu" style="background-color: white">
+                                                         <div class="mega-menu-wrap">
+                                                             <div class="row">
+                                                             <div class="col-md-3" >
+                                                                 <h4 class="row mega-title " style="background-color: black">BMW</h4>
+                                                                 <ul class="stander">
+                                                                     <li><a class="nav-link hvr-underline-from-left" href="../Cars/i4/details.html">THE I4</a></li>
+                                                                     <li><a class="nav-link hvr-underline-from-left" href="../Cars/XM/details.html">THE X6 M</a></li>
+                                                                     <li><a class="nav-link hvr-underline-from-left" href="../Cars/THE M3/details.html">THE M3</a></li>
+                                                                     <li><a class="nav-link hvr-underline-from-left" href="../Cars/THE M4/details.html">THE M4</a></li>
+                                                                     <br>
+                                                                     <button onclick="document.location='../BMW/BMW.html'" type="button" class="btn btn-outline-dark">EXPLORE</button>
+                                                                 </ul>
+                                                                 </div>
+                                                                 <div class="col-md-3">
+                                                                         <h4 class="row mega-title" style="background-color: black">TOYOTA</h4>
+                                                                     <ul class="stander">
+                                                                         <li><a class="nav-link hvr-underline-from-left" href="../Cars/Prius Prime/details.html">PRIUS PRIME</a></li>
+                                                                         <li><a class="nav-link hvr-underline-from-left" href="../cars/Camry/details.html">CAMRY</a></li>
+                                                                         <li><a class="nav-link hvr-underline-from-left" href="../Cars/GR86/details.html">GR86</a></li>
+                                                                         <li><a class="nav-link hvr-underline-from-left" href="../Cars/supra/details.html">GR SUPRA</a></li>
+                                                                         <br>
+                                                                         <button onclick="document.location='../TOYOTA/TOYOTA.html'" type="button" class="btn btn-outline-dark">EXPLORE</button>
+                                                                     </ul>
+                                                                 </div>
+                                                                 <div class="col-md-3">
+                                                                     <h4 class="row mega-title" style="background-color: black">LAMBORGHINI</h4>
+                                                                     <ul class="stander">
+                                                                         <li><a class="nav-link hvr-underline-from-left" href="../Cars/Lambo Aventador/details.html">AVENTADOR</a></li>
+                                                                         <li><a class="nav-link hvr-underline-from-left" href="../Cars/Lambo SVJ/details.html">AVENTADOR SVJ</a></li>
+                                                                         <li><a class="nav-link hvr-underline-from-left" href="../Cars/Sian/details.html">SIAN ROADSTER</a></li>
+                                                                         <li><a class="nav-link hvr-underline-from-left" href="../Cars/Contach/details.html">COUNTACH</a></li>
+                                                                         <br>
+                                                                         <button onclick="document.location='../Lambor/Lambor.html'"  type="button" class="btn btn-outline-dark">EXPLORE</button>
+                                                                     </ul>
+                                                                 </div>
+                                                                 <div class="col-md-3">
+                                                                     <h4 class="row mega-title" style="background-color: black">HONDA</h4>
+                                                                     <ul class="stander">
+                                                                         <li><a class="nav-link hvr-underline-from-left" href="../Cars/Honda Accord/details.html">HONDA ACCORD</a></li>
+                                                                         <li><a class="nav-link hvr-underline-from-left" href="../Cars/civic sedan/details.html">CIVIC SEDAN</a></li>
+                                                                         <li><a class="nav-link hvr-underline-from-left" href="../Cars/civic hatch/details.html">CIVIC HATCHBAC</a></li>
+                                                                         <li><a class="nav-link hvr-underline-from-left" href="../Cars/Honda crv/details.html">HONDA CR-V</a></li>
+                                                                         <br>
+                                                                         <button onclick="document.location='../Honda/Honda.html'" type="button" class="btn btn-outline-dark">EXPLORE</button>
+                                                                     </ul>
+                                                                 </div>
+                                                                 
+                                                             </div>
+                                                         </div>	
+                                                     </div>
+                                                 </li>
+                                 
+                                            <li class="nav-item">
+                                              <a class="nav-link hvr-underline-from-left" href="../Compare/Compare.html">CAMPARISION  <i class="fab fa-bandcamp"></i></a>
+                                            </li>                                     
+                                           
+                                            <li class="nav-item">
+                                              <a class="nav-link hvr-underline-from-left" href="../Finance/Finance.html">FINANCE  <i class="fas fa-hand-holding-usd"></i></a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a class="nav-link hvr-underline-from-left" href="../warranty/warranty.html">WARRANTY  <i class="fas fa-handshake"></i></a>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a class="nav-link hvr-underline-from-left" href="../contact us/contact.html">CONTACT US  <i class="fas fa-address-book"></i></a>
+                                            </li>
+                                          
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </nav>
+                                  </header> 
+
+
+
+
+
+<!-- Video  -->
+
+
+
+
+<div  >
+      
+    <video style="width: 100%"     autoplay muted loop src="y2mate.com - The allnew Honda Civic has taken shape_1080p.mp4"></video>
+
+    
+
+
+</div>
+
+
+<!-- <div style="display: flex;justify-content: space-around;" >
+  <h1>Heloooooooooooooo</h1>
+  <video  class="rounded-3 img-fluid" style="width: 30%;"   onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+  <source src="All New Accord 2019.mp4" type="video/mp4"></source>
+  </video> 
+</div>
+</div> -->
+
+
+<!-- INTRODUCTION  -->
+
+<a href="" id="button"></a>
+
+<center><img src="honda_loading.gif" width="10%" height="auto" alt="" data-aos="flip-right" data-aos-duration="3000" data-aos-once="true"></center>
+
+<h1 class="fw-bold text-center" style="font-size: 5vw;font-family: 'Franklin Gothic heavy';" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">INTRODUCTION</h1>
+
+<br>
+
+
+
+ <div class="container">
+  <div class="row">
+      <div class="col-md-12">
+          <div class="main-timeline">
+              <div class="timeline"  data-aos="fade-down" data-aos-duration="2000" data-aos-once="true">
+                  <div
+                   class="timeline-content">
+                      <div class="timeline-icon"><i class="fa fa-globe"></i></div>
+                      <h3 class="title">HISTORY</h3>
+                      <p class="description">
+                        The engineer Honda Soichiro founded the Honda Technical Research Institute near Hamamatsu in 1946 to develop small, efficient internal-combustion engines. It was incorporated as Honda Motor Company in 1948 and began producing motorcycles in 1949. The Honda C-100, a small-engine motorcycle, was introduced in 1953. In 1959 the company established a U.S. subsidiary, the American Honda Motor Company, which began producing motorcycles in 1979 and automobiles in 1982.
+                      </p>
+                  </div>
+              </div>
+              <div class="timeline"  data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+                  <div class="timeline-content">
+                      <div class="timeline-icon"><i class="fa fa-rocket"></i></div>    
+                      <h3 class="title">EVOLUTION</h3>
+                      <p class="description">
+                        Honda has been the world's largest motorcycle manufacturer since 1959, reaching a production of 400 million by the end of 2019, as well as the world's largest manufacturer of internal combustion engines measured by volume, producing more than 14 million internal combustion engines each year. Honda became the second-largest Japanese automobile manufacturer in 2001. In 2015, Honda was the eighth largest automobile manufacturer in the world.
+                      </p>
+                    </div>
+              </div>
+
+              <div class="timeline"  data-aos="fade-down" data-aos-duration="2000" data-aos-once="true">
+                <div class="timeline-content">
+                    <div class="timeline-icon"><i class="fa fa-rocket"></i></div>    
+                    <h3 class="title">VISION</h3>
+                    <p class="description">
+                      We continue to draw inspiration from the visionary ideas of our namesake, Soichiro Honda. He saw incredible power in the freedom of mobility and used his imagination to change the world. It is this mindset that guides us to help move people forward and protect the future we all share.
+                    </p>
+                  </div>
+            </div>
+
+            <div class="timeline"  data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
+              <div class="timeline-content">
+                  <div class="timeline-icon"><i class="fa fa-rocket"></i></div>    
+                  <h3 class="title">DESIGN</h3>
+                  <p class="description">
+                    What makes a Honda is who makes a Honda. It’s our diverse associates who have led us to accomplish so much in making the world smarter, safer and more mobile every day.
+
+                    Our associates’ energy and drive extends beyond the work day. Their passion for life takes many different forms.
+                  </p>
+                </div>
+          </div>
+
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Video  -->
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+<!-- <!-- HOVER VIDEO   -->
+
+
+<!-- <div class="container-fluid shadow-lg p-3 mb-5 bg-body rounded"> -->
+  <!-- <h1 style="font-size: 3.2vw;" class=" fw-bold text-center text-uppercase" >Obsess, Innovate, Repeat</h1>
+  <p style="font-size: 1.5vw;" class="text-center fs-5" >Precision Crafted Performance is what drives us. It’s at the core of everything we do. From ideating and problem solving to bringing innovation to life, it all adds up to performance you can feel in every detail.</p> <br>
+
+<div class="d-flex justify-content-center gap-1  "> 
+
+  
+
+
+  <!-- <div >
+    
+    <h3  class="text-dark fw-bold text-center" >INNOVATION</h3>
+    <p class=" text-dark fw-bold text-center" >DISCOVER HOW WE WORK</p>
+    <video class="rounded-3 img-fluid"  style="box-shadow:4px 4px 4px black; "   onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+      <source src="Premium Sedans and SUVs - Acura.com.mp4" type="video/mp4"></source>
+      </video> 
+      
+  </div>
+
+  <div  >
+    <h3  class="text-dark fw-bold text-center" >PERFORMANCE</h3>
+    <p class="text-dark fw-bold text-center" >SEE US IN ACTION</p>
+    <video class="rounded-3 img-fluid" style="box-shadow:4px 4px 4px black;"   onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+      <source src="Premium Sedans and SUVs - Acura.com_2.mp4" type="video/mp4"></source>
+      </video> 
+  </div>
+
+  <div >
+    <h3  class="text-dark fw-bold text-center"" >INNOVATION</h3>
+    <p class="text-dark fw-bold text-center" >EXPLORE EVERY DETAIL</p>
+    <video class="rounded-3 img-fluid" style="box-shadow:4px 4px 4px black;"  onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+      <source src="Premium Sedans and SUVs - Acura.com_3.mp4" type="video/mp4"></source>
+      </video> 
+  </div> -->
+
+
+
+   <!-- <video class="rounded-3 scar1" style="box-shadow:4px 4px 4px black;"   onmouseover="this.play()" onmouseout="this.pause();this.currentTime=0;">
+    <source src="Premium Sedans and SUVs - Acura.com_2.mp4" type="video/mp4"></source>
+    </video>
+  <div style="width: 50vw;" class="text-center shadow-lg p-3 mb-5 bg-body rounded" >
+  <p style="font-family: 'Franklin Gothic heavy';font-size: 3.5vw;"  class="text-center" >INNOVATION</p>
+  <p style="font-size: 1.2vw;padding-left: 3%;" >DISCOVER OUR WORK</p>
+  </div>  -->
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- TRENDING MODELS  -->
+<div class="container-fluid" >
+
+<div class=" d-flex justify-content-center" >
+  <h1 style="font-family: Franklin Gothic Heavy;font-size: 5vw;" class="text-center fw-bold "  data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">TRENDING</h1><br><br>
+  <img height="90vh" src="25581-7-stock-market-graph-up-transparent-image-thumb.png" alt=""  data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">
+  
+</div>
+
+
+
+  <div style="height: 80vh;" class="container d-flex align-items-center justify-content-center position-relative flex-wrap">
+   
+    <div class="card d-flex position-relative flex-column"  data-aos="fade-down" data-aos-duration="3000" data-aos-once="true">
+        <div class='imgContainer'>
+            <img  src='img-models05.jpg'>
+        </div>
+        <div class="content1">
+            <h2 class="fw-bold" >Honda Accord </h2>
+            <p> <b> Engine : </b> Turbocharged 
+               <b> Horsepower : </b> 192 @ 6000 rpm
+                <b> Seats : </b> Cloth <br>
+               <b> Wheels : </b> 17 in Silver-Painted 
+               <b>Transmision : </b>  (E-CVT) <br> <br>
+               <a href="../Cars/Honda Accord/details.html" class="btn btn-danger btn-sm" >PURCHASE</a>
+                
+            </p>
+            
+        </div>
+        
+    </div>
+
+    <div class="card d-flex position-relative flex-column"  data-aos="fade-down" data-aos-duration="3000" data-aos-once="true">
+        <div class='imgContainer'>
+            <img src='crv.jpg'>
+            
+        </div>
+        <div class="content1">
+            <h2 class="fw-bold" > Honda CR-V</h2>
+            <p><b> Engine : </b> 190hp Turbocharged 
+              <b> Horsepower : </b> 182 @ 5000 rpm
+               <b> Seats : </b> Cloth <br>
+              <b> Wheels : </b> 17 in Silver-Painted 
+              <b>Transmision : </b>  (E-CVT).</p> 
+              <a href="../Cars/Honda crv/details.html" class="btn btn-danger btn-sm" >PURCHASE</a>
+
+        </div>
+
+
+
+    </div>
+    <div class="card d-flex position-relative flex-column"  data-aos="fade-down" data-aos-duration="3000" data-aos-once="true">
+        <div class='imgContainer'>
+            <img src='civ.png'>
+        </div>
+        <div class="content1">
+            <h2 class="fw-bold" >Honda Civic</h2>
+            <p><b> Engine : </b> 220hp Turbocharged 
+              <b> Horsepower : </b> 200 @ 6000 rpm
+               <b> Seats : </b> Cloth <br>
+              <b> Wheels : </b> 17 in Silver-Painted 
+              <b>Transmision : </b>  (E-CVT).</p> 
+              <a href="../Cars/Honda civic/details.html" class="btn btn-danger btn-sm" >PURCHASE</a>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+</div>
+
+<br>
+<br>
+<br>
+
+<!-- CAROUSEL  -->
+
+
+
+
+<div class="niche" >
+<h1  style="font-size: 4.5vw;font-family: 'Franklin Gothic heavy';" class="text-center  fw-bold"  data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">LATEST MODELS</h1>
+
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel"  data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="fotor_2023-2-11_12_32_42.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block " >
+       <h5 style="font-size: 3.5vw;" class=" fw-bold text-center" >HONDA ACCORD</h5>
+        <p style="text-align:center;color: white;font-size: 1.1vw;" >The Sophisticated midsize sedan boasts an elegant new look inside and out, along with available Google built-in and a next-generation hybrid powertrain <br><br>
+         <span style="font-size: 2.5vw;" class="display-4" > PRICE : $27,538 <br>
+        </span> <br>
+        <a style="width: 10vw;font-size: 1.3vw;" class="btn btn-outline-danger text-light col-4  border-light rounded-pill btn-lg" href='../Cars/Honda Accord/details.html'">EXPLORE</a>
+
+        </p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="MY23-Civic-Sedan-non-VLP-flm-1024-2x.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="font-size: 3.5vw;" class="display-4 fw-bold text-center" >CIVIC SEDAN</h5>
+        <p style="text-align:center;color: white;font-size: 1.1vw;" >Crank up the fun in the 2023 Civic Sedan, with dramatic styling,an expansive cabin, and thrilling performance. <br><br>
+         <span style="font-size: 2.5vw;" class="display-6" > PRICE : $25,050 <br>
+        </span> <br>
+        <a style="width: 10vw;font-size: 1.3vw;" class="btn btn-outline-danger text-light col-4  border-light rounded-pill btn-lg" href="../Cars/civic sedan/details.html">EXPLORE</a>
+
+        </p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="MY23-Civic-Hatchback-non-VLP-full-line-1024-2x.jpg"  class="d-block w-100 " alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="font-size: 3.5vw;" class="display-4 fw-bold text-center" >CIVIC HATCHBACK</h5>
+        <p style="text-align:center;color: white;font-size: 1.1vw;" >With sporty good looks, easy cargo access, and responsive performance, the 2023 Civic Hatcback is made for five door thrills. <br><br>
+         <span class="display-6" > PRICE : $25,850 <br>
+        </span> <br>
+        <a style="width: 10vw;font-size: 1.3vw;" class="btn btn-outline-danger text-light col-4  border-light rounded-pill btn-lg" href="../Cars/civic hatch/details.html">EXPLORE</a>
+       
+
+        </p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+</div>
+
+<br>
+<br>
+<br>
+
+
+
+
+
+
+<section class="cta1 text-center" > 
+
+  <h1 style="font-size: 4.5vw;" class="text-light " data-aos="fade-up" data-aos-duration="3000" data-aos-once="true" >LOOKING FOR MORE ? </h1>
+  <h1 style="font-size: 3.5vw;" class="text-light " data-aos="fade-up" data-aos-duration="3000" data-aos-once="true" >CHECK OUT HONDA TRENDING MODELS </h1>
+  <br>
+  <a href="Product.html" class="btn btn-danger btn-lg"  data-aos="flip-right" data-aos-duration="3000" data-aos-once="true">EXPLORE</a>
+
+</section>
+
+
+<br>
+<br>
+<br>
+<br>
+
+<div  data-aos="fade-down" data-aos-duration="3000" data-aos-once="true">
+
+<img  class="scar1" src="civ.png" alt="">
+<div style="width: 50vw;" class="text-center shadow-lg p-3 mb-5 bg-body rounded" >
+<p style="font-family: 'Franklin Gothic heavy';font-size: 2.5vw;"  class="text-center" >The Civic is the 2022 North American Car of the Year™</p>
+<p style="font-size: 1.1vw;padding-left: 3%;" >The 2022 Honda Civic has earned the prestigious North American Car of the Year™ award for its excellence in innovation, design, safety features, overall performance and more. the 11th generation of America's most popular compact car, has earned the prestigious 2022 North American Car of the Year award. Civic was honored third time, with the 10th-generation Civic winning in 2016 and 8th generation taking the top honor in 2006.</p>
+<a href="../Cars/Honda civic/details.html" class="btn btn-danger " >EXPLORE</a>
+</div>
+</div>
+
+
+
+<section class="cta text-center" >
+      
+      <center><img src="honda-logo-transparent-background-0.jpg " class="img-fluid alt="  data-aos="flip-right" data-aos-duration="3000" data-aos-once="true"></center>
+      <h1 style="font-size: 5.9vw;" class="text-center text-light fw-bold" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">CARS WARRANTY</h1>
+     <center> <p style="font-size: 1.4vw;" class="col-5 fw-bold" data-aos="fade-up" data-aos-duration="3000" data-aos-once="true">  3-Year 36,000-Mile Limited Vehicle Warranty
+        All new Honda vehicles are covered by a 3-Year/36,000-Mile Limited Warranty, plus a 5-Year/60,000-Mile Powertrain Limited Warranty.</p></center>
+        <a href="../warranty/warranty.html" class="btn btn-primary"  data-aos="flip-right" data-aos-duration="3000" data-aos-once="true">READ MORE</a>
+  </section>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<!-- Footer  -->
+
+<footer id="footer">
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3>AUTOWORLD</h3>
+          <p>
+              SD-1,<br>
+              Block A<br>
+              North Nazimabad Town, <br>
+              Karachi, 74700<br>
+            <strong>Phone:</strong> (021) 36630102<br>
+            <strong>Email:</strong> AutoWorld@gmail.com<br>
+          </p>
+        </div>
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="../AutoWorld/AutoWorld.html">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="../About Us/About us.html">About Us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="../Search/tr.html">Brands</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="../Compare/Compare.html">Camparision</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="../Finance/Finance.html">Finance</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="../warranty/warranty.html">Warranty</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="../Contact us/contact.html">Contact Us</a></li>
+
+
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>BRANDS</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="../TOYOTA/TOYOTA.html">TOYOTA</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="../BMW/BMW.html">BMW</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="../Lambor/Lambor.html">LAMBORGHINI</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="../Honda/Honda.html">HONDA</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-newsletter">
+          <h4>Join Our Newsletter</h4>
+          <p style="text-transform: lowercase;">ENTER YOUR EMAIL TO RECEIVE UPDATES ON NEW PRODUCTS ANNOUNCEMENT, SPECIAL PROMOTIONS, SALES AND MORE</p>
+          <form action="#exampleModal">
+            <input type="email" name="email"><input required data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" value="Subscribe">
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container d-md-flex py-4">
+
+    <div class="me-md-auto text-center text-md-start">
+      <div class="copyright">
+        &copy; Copyright <strong><span>AutoWorld</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        
+        Designed by <a  disabled>TAYYABA SAAD</a>
+      </div>
+    </div>
+    <div class="social-links text-center text-md-right pt-3 pt-md-0">
+      <a href="https://autoworldjapan.blogspot.com/" class="twitter"  data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"><i class="fab fa-skype"></i></a>
+      <a href="https://www.facebook.com/autoworldjapan" class="facebook" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"><i class="fab fa-facebook-square"></i></a>
+      <a href="https://www.instagram.com/autoworldjapan/" class="instagram" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"><i class="fab fa-instagram-square"></i></a>
+      <a href="https://twitter.com/autoworldjapan" class="google-plus" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/autoworld-international-ltd-/" class="linkedin" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </div>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        
+
+        <h5 class="modal-title text-dark" id="exampleModalLabel"><img src="Auto.png" width="15%" class="rounded-circle image-fluid" alt="">  AutoWorld</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-dark">
+        Thank You! for Subcribing to our Newsletter 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</footer><!-- End Footer --> 
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+  AOS.init();
+
+ 
+    $(document).ready(function(){
+                     $(window).scroll(function(){
+                     if($(window).scrollTop()>1){
+                       $("nav").css("background-color" , "white");
+                       $(".nav-link").css("color" , "black");
+                     //   $(".mega-menu").css("background-color" , "white");
+ 
+ 
+ 
+ 
+                     }
+                     else{
+                       $("nav").css("background" , "transparent");
+                       $(".nav-link").css("color" , "white");
+                     //   $(".mega-menu").css("background-color" , "white");
+                       $(".mega-menu .nav-link").css("color" , "black");
+ 
+ 
+                       
+ 
+ 
+ 
+                     }
+                     });
+                   });
+ 
+
+                   var btn = $('#button');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 300) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
