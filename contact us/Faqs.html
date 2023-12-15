@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faqs</title>
+    <link rel="icon" href="auto.png">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="./assets/styles/styles.css" /> -->
+    <script defer src="https://unpkg.com/alpinejs@3.2.3/dist/cdn.min.js"></script>
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://static.fontawesome.com/css/fontawesome-app.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+     <!--------- FONT AWESOME  ------->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+     <!-- Font Awesome Kit JS -->
+     <script src="https://kit.fontawesome.com/2c7fc28a2f.js"></script>
+     <link rel="stylesheet" href="faqs.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- ANIMATION css -->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+     <!-- animation js -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+     
+</head>
+</head>
+<body>
+    
+<!---------- JQUERY LINK --------->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+<!---------- BOOTSTRAP JAVASCRIPT -------->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+                               
+                              <!-- NAVBAR -->
+                           <!-- 1. Home page which will brief about the company, also design a suitable logo  and
+                                   include it on home page, you may display the logo on all the pages in the  site.  -->
+                                   <header class="main-nav fixed-top">
+                                    <nav class="navbar navbar-expand-lg">
+                                      <div class="container-fluid">
+                                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                                        <i class="fas fa-stream navbar-toggler-icon"></i>
+                                      </button>
+                                      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                                        <a class="navbar-brand" href="../AutoWorld/AutoWorld.html"><img src="logo.png" alt="AutoWorldLogo" height="90px" width="100px" id="logo1" data-aos="flip-right" data-aos-duration="3000" data-aos-once="true"></a>
+                                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                          <a class="nav-link hvr-underline-from-left" href="../AutoWorld/AutoWorld.html">HOME  <i class="fas fa-home"></i></a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link hvr-underline-from-left" href="../About Us/About us.html">ABOUT US  <i class="fas fa-users"></i></a>
+                                        </li>  
+                                         
+                                           <li class="mega-drop-down"><a class="nav-link hvr-underline-from-left" href="../Search/tr.html">BRANDS  <i class="fas fa-car"></i> </a>
+                                             <div class="animated fadeIn mega-menu" style="background-color: white">
+                                               <div class="mega-menu-wrap">
+                                                 <div class="row">
+                                                 <div class="col-md-3" >
+                                                   <h4 class="row mega-title " style="background-color: black">BMW</h4>
+                                                   <ul class="stander">
+                                                     <li><a class="nav-link hvr-underline-from-left" href="../Cars/i4/details.html">THE I4</a></li>
+                                                     <li><a class="nav-link hvr-underline-from-left" href="../Cars/XM/details.html">THE X6 M</a></li>
+                                                     <li><a class="nav-link hvr-underline-from-left" href="../Cars/THE M3/details.html">THE M3</a></li>
+                                                     <li><a class="nav-link hvr-underline-from-left" href="../Cars/THE M4/details.html">THE M4</a></li>
+                                                     <br>
+                                                     <button onclick="document.location='../BMW/BMW.html'" type="button" class="btn btn-outline-dark">EXPLORE</button>
+                                                   </ul>
+                                                   </div>
+                                                   <div class="col-md-3">
+                                                       <h4 class="row mega-title" style="background-color: black">TOYOTA</h4>
+                                                     <ul class="stander">
+                                                       <li><a class="nav-link hvr-underline-from-left" href="../Cars/Prius Prime/details.html">PRIUS PRIME</a></li>
+                                                       <li><a class="nav-link hvr-underline-from-left" href="../cars/Camry/details.html">CAMRY</a></li>
+                                                       <li><a class="nav-link hvr-underline-from-left" href="../Cars/GR86/details.html">GR86</a></li>
+                                                       <li><a class="nav-link hvr-underline-from-left" href="../Cars/supra/details.html">GR SUPRA</a></li>
+                                                       <br>
+                                                       <button onclick="document.location='../TOYOTA/TOYOTA.html'" type="button" class="btn btn-outline-dark">EXPLORE</button>
+                                                     </ul>
+                                                   </div>
+                                                   <div class="col-md-3">
+                                                     <h4 class="row mega-title" style="background-color: black">LAMBORGHINI</h4>
+                                                     <ul class="stander">
+                                                       <li><a class="nav-link hvr-underline-from-left" href="../Cars/Lambo Aventador/details.html">AVENTADOR</a></li>
+                                                       <li><a class="nav-link hvr-underline-from-left" href="../Cars/Lambo SVJ/details.html">AVENTADOR SVJ</a></li>
+                                                       <li><a class="nav-link hvr-underline-from-left" href="../Cars/Sian/details.html">SIAN ROADSTER</a></li>
+                                                       <li><a class="nav-link hvr-underline-from-left" href="../Cars/Contach/details.html">COUNTACH</a></li>
+                                                       <br>
+                                                       <button onclick="document.location='../Lambor/Lambor.html'"  type="button" class="btn btn-outline-dark">EXPLORE</button>
+                                                     </ul>
+                                                   </div>
+                                                   <div class="col-md-3">
+                                                     <h4 class="row mega-title" style="background-color: black">HONDA</h4>
+                                                     <ul class="stander">
+                                                       <li><a class="nav-link hvr-underline-from-left" href="../Cars/Honda Accord/details.html">HONDA ACCORD</a></li>
+                                                       <li><a class="nav-link hvr-underline-from-left" href="../Cars/civic sedan/details.html">CIVIC SEDAN</a></li>
+                                                       <li><a class="nav-link hvr-underline-from-left" href="../Cars/civic hatch/details.html">CIVIC HATCHBAC</a></li>
+                                                       <li><a class="nav-link hvr-underline-from-left" href="../Cars/Honda crv/details.html">HONDA CR-V</a></li>
+                                                       <br>
+                                                       <button onclick="document.location='../Honda/Honda.html'" type="button" class="btn btn-outline-dark">EXPLORE</button>
+                                                     </ul>
+                                                   </div>
+                                                   
+                                                 </div>
+                                               </div>	
+                                             </div>
+                                           </li>
+                                   
+                                        <li class="nav-item">
+                                          <a class="nav-link hvr-underline-from-left" href="../Compare/Compare.html">CAMPARISION  <i class="fab fa-bandcamp"></i></a>
+                                        </li>                                     
+                                         
+                                        <li class="nav-item">
+                                          <a class="nav-link hvr-underline-from-left" href="../Finance/Finance.html">FINANCE  <i class="fas fa-hand-holding-usd"></i></a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link hvr-underline-from-left" href="../warranty/warranty.html">WARRANTY  <i class="fas fa-handshake"></i></a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link hvr-underline-from-left" href="../contact us/contact.html">CONTACT US  <i class="fas fa-address-book"></i></a>
+                                        </li>
+                                        
+                                        </ul>
+                                      </div>
+                                      </div>
+                                    </nav>
+                                    </header> 
+                                  
+
+
+
+                                  <section class="cta" >
+                                    <br>       
+                                        
+                                        <h1 style="font-size: 4.8vw;font-family: 'Franklin Gothic Heavy';" class="text-center text-light fw-bold" >Frequently Asked Car Dealer Questions
+                                        </h1>
+                                         <p style="font-size: 1vw;" class="text-center text-light fw-bold" >At AutoWorld, we strive for the best in customer satisfaction. Our staff across all departments - from sales to service - is standing by to answer any and all questions you may have! No question is too big or too small. </p>
+                                    </section>
+                                
+                                
+
+
+
+                                  
+                                    <main class="p-5 bg-light">
+<h1 class="text-center" style="font-size: 6vw;font-family: 'Franklin Gothic heavy';" >FAQS</h1>
+
+                                      <div class="flex justify-center items-start my-2">
+                                        <div class="w-full sm:w-10/12 md:w-1/2 my-1">
+                                          <ul class="flex flex-col">
+                                            <li class="bg-white my-2 shadow-lg" x-data="accordion(1)">
+                                              <h2
+                                                @click="handleClick()"
+                                                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                                              >
+                                                <span>Why is taking a test drive so important?</span>
+                                                <svg
+                                                  :class="handleRotate()"
+                                                  class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                                                  viewBox="0 0 20 20"
+                                                >
+                                                  <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+                                                </svg>
+                                              </h2>
+                                              <div
+                                                x-ref="tab"
+                                                :style="handleToggle()"
+                                                class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                                              >
+                                                <p class="p-3 text-gray-900">
+                                                    Buying a vehicle is a big purchase - you want to make sure you get it right. Taking a test drive is the best way to make sure you are happy with the vehicle's handling, braking, infotainment system, comfort, utility, functionality, and the overall driving experience.                                                 </p>
+                                              </div>
+                                            </li>
+                                            <li class="bg-white my-2 shadow-lg" x-data="accordion(2)">
+                                              <h2
+                                                @click="handleClick()"
+                                                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                                              >
+                                                <span>Can I buy a car online?</span>
+                                                <svg
+                                                  :class="handleRotate()"
+                                                  class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                                                  viewBox="0 0 20 20"
+                                                >
+                                                  <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+                                                </svg>
+                                              </h2>
+                                              <div
+                                                class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                                                x-ref="tab"
+                                                :style="handleToggle()"
+                                              >
+                                                <p class="p-3 text-gray-900">
+                                                    Yes, you can. AudtoWorld is pleased to offer online car buying! Start your vehicle search right here on our Inventory page. Without ever leaving home, you can shop for your next vehicle and get pre-approved all on our site. Contact us if you are interested in a vehicle, and we'll bring it to you for a test drive.
+
+                                                </p>
+                                              </div>
+                                            </li>
+                                            <li class="bg-white my-2 shadow-lg" x-data="accordion(3)">
+                                              <h2
+                                                @click="handleClick()"
+                                                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                                              >
+                                                <span>Who can I talk to about buying a car?</span>
+                                                <svg
+                                                  :class="handleRotate()"
+                                                  class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                                                  viewBox="0 0 20 20"
+                                                >
+                                                  <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+                                                </svg>
+                                              </h2>
+                                              <div
+                                                class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                                                x-ref="tab"
+                                                :style="handleToggle()"
+                                              >
+                                                <p class="p-3 text-gray-900">
+                                                    A member of our sales team is standing by to speak with you about purchasing a car. To contact the sales department, you can fill out our online contact form, use our website chat feature, call or text sales at (021) 36630102, or stop by the showroom.                                                </p>
+                                              </div>
+                                            </li>
+                                            <li class="bg-white my-2 shadow-lg" x-data="accordion(4)">
+                                              <h2
+                                                @click="handleClick()"
+                                                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                                              >
+                                                <span>Where do I find specials on car sales?</span>
+                                                <svg
+                                                  :class="handleRotate()"
+                                                  class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                                                  viewBox="0 0 20 20"
+                                                >
+                                                  <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+                                                </svg>
+                                              </h2>
+                                              <div
+                                                class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                                                x-ref="tab"
+                                                :style="handleToggle()"
+                                              >
+                                                <p class="p-3 text-gray-900">
+                                                    AutoWorld has some great sales going on. Finding our current specials is easy; they are listed right online under the Financing and Specials tab. Because specials change often, we recommend that you check back frequently. If you would like to take advantage of one of our specials, just give a call. 
+
+                                                </p>
+                                              </div>
+                                            </li>
+                                            <li class="bg-white my-2 shadow-lg" x-data="accordion(5)">
+                                              <h2
+                                                @click="handleClick()"
+                                                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                                              >
+                                                <span>How will I know when my car is due for an oil change?</span>
+                                                <svg
+                                                  :class="handleRotate()"
+                                                  class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                                                  viewBox="0 0 20 20"
+                                                >
+                                                  <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+                                                </svg>
+                                              </h2>
+                                              <div
+                                                class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                                                x-ref="tab"
+                                                :style="handleToggle()"
+                                              >
+                                                <p class="p-3 text-gray-900">
+                                                    Recommended oil change intervals vary between each make and model, but generally fall in the 'every 5000-8000 mile' category. If you are unsure, or would like some guidance on when to bring your car in, please give our service center a call at (021) 36630102                                               </p>
+                                              </div>
+                                            </li>
+                                            <li class="bg-white my-2 shadow-lg" x-data="accordion(6)">
+                                              <h2
+                                                @click="handleClick()"
+                                                class="flex flex-row justify-between items-center font-semibold p-3 cursor-pointer"
+                                              >
+                                                <span>What payment methods do you accept?</span>
+                                                <svg
+                                                  :class="handleRotate()"
+                                                  class="fill-current text-purple-700 h-6 w-6 transform transition-transform duration-500"
+                                                  viewBox="0 0 20 20"
+                                                >
+                                                  <path d="M13.962,8.885l-3.736,3.739c-0.086,0.086-0.201,0.13-0.314,0.13S9.686,12.71,9.6,12.624l-3.562-3.56C5.863,8.892,5.863,8.611,6.036,8.438c0.175-0.173,0.454-0.173,0.626,0l3.25,3.247l3.426-3.424c0.173-0.172,0.451-0.172,0.624,0C14.137,8.434,14.137,8.712,13.962,8.885 M18.406,10c0,4.644-3.763,8.406-8.406,8.406S1.594,14.644,1.594,10S5.356,1.594,10,1.594S18.406,5.356,18.406,10 M17.521,10c0-4.148-3.373-7.521-7.521-7.521c-4.148,0-7.521,3.374-7.521,7.521c0,4.147,3.374,7.521,7.521,7.521C14.148,17.521,17.521,14.147,17.521,10"></path>
+                                                </svg>
+                                              </h2>
+                                              <div
+                                                class="border-l-2 border-purple-600 overflow-hidden max-h-0 duration-500 transition-all"
+                                                x-ref="tab"
+                                                :style="handleToggle()"
+                                              >
+                                                <p class="p-3 text-gray-900">
+                                                  Any method of payments acceptable by you. For example: We accept MasterCard, Visa,  PayPal, JCB Discover, Gift Cards, etc.
+                                                </p>
+                                              </div>
+                                            </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+                                    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                  
+                                  
+                                 
+
+
+
+
+
+
+                                  
+
+
+<!-- ======= Footer ======= -->
+<!-- Footer  -->
+
+<footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+  
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>AUTOWORLD</h3>
+            <p>
+                SD-1,<br>
+                Block A<br>
+                North Nazimabad Town, <br>
+                Karachi, 74700<br>
+              <strong>Phone:</strong> (021) 36630102<br>
+              <strong>Email:</strong> AutoWorld@gmail.com<br>
+            </p>
+          </div>
+          <div class="col-lg-2 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="../AutoWorld/AutoWorld.html">Home</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../About Us/About us.html">About Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../Search/tr.html">Brands</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../Compare/Compare.html">Camparision</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../Finance/Finance.html">Finance</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../warranty/warranty.html">Warranty</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../Contact us/contact.html">Contact Us</a></li>
+  
+  
+            </ul>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>BRANDS</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="../TOYOTA/TOYOTA.html">TOYOTA</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../BMW/BMW.html">BMW</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../Lambor/Lambor.html">LAMBORGHINI</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="../Honda/Honda.html">HONDA</a></li>
+            </ul>
+          </div>
+  
+          <div class="col-lg-4 col-md-6 footer-newsletter">
+            <h4>Join Our Newsletter</h4>
+            <p style="text-transform: lowercase;">ENTER YOUR EMAIL TO RECEIVE UPDATES ON NEW PRODUCTS ANNOUNCEMENT, SPECIAL PROMOTIONS, SALES AND MORE</p>
+            <form action="#exampleModal">
+              <input type="email" name="email"><input required data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" value="Subscribe">
+            </form>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+    <div class="container d-md-flex py-4">
+  
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>AutoWorld</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          
+          Designed by <a  disabled>TAYYABA SAAD</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://autoworldjapan.blogspot.com/" class="twitter"  data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"><i class="fab fa-skype"></i></a>
+        <a href="https://www.facebook.com/autoworldjapan" class="facebook" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"><i class="fab fa-facebook-square"></i></a>
+        <a href="https://www.instagram.com/autoworldjapan/" class="instagram" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"><i class="fab fa-instagram-square"></i></a>
+        <a href="https://twitter.com/autoworldjapan" class="google-plus" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/company/autoworld-international-ltd-/" class="linkedin" data-aos="fade-up" data-aos-duration="2000" data-aos-once="true"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  
+  
+  
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          
+  
+          <h5 class="modal-title text-dark" id="exampleModalLabel"><img src="Auto.png" width="15%" class="rounded-circle image-fluid" alt="">  AutoWorld</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-dark">
+          Thank You! for Subcribing to our Newsletter 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  </footer><!-- End Footer --> 
+  
+
+</body>
+<script>
+    AOS.init();
+
+   
+    $(document).ready(function(){
+                       $(window).scroll(function(){
+                       if($(window).scrollTop()>1){
+                         $("nav").css("background-color" , "white");
+                         $(".nav-link").css("color" , "black");
+                       //   $(".mega-menu").css("background-color" , "white");
+   
+   
+   
+   
+                       }
+                       else{
+                         $("nav").css("background" , "transparent");
+                         $(".nav-link").css("color" , "white");
+                       //   $(".mega-menu").css("background-color" , "white");
+                         $(".mega-menu .nav-link").css("color" , "black");
+   
+   
+                         
+   
+   
+   
+                       }
+                       });
+                     });
+   
+
+                     document.addEventListener('alpine:init', () => {
+      Alpine.store('accordion', {
+        tab: 0
+      });
+      
+      Alpine.data('accordion', (idx) => ({
+        init() {
+          this.idx = idx;
+        },
+        idx: -1,
+        handleClick() {
+          this.$store.accordion.tab = this.$store.accordion.tab === this.idx ? 0 : this.idx;
+        },
+        handleRotate() {
+          return this.$store.accordion.tab === this.idx ? 'rotate-180' : '';
+        },
+        handleToggle() {
+          return this.$store.accordion.tab === this.idx ? `max-height: ${this.$refs.tab.scrollHeight}px` : '';
+        }
+      }));
+    })
+</script>
+</html>
